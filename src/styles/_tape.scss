@@ -1,25 +1,31 @@
 .box {
     position: relative;
-    width: 800px;
-    height: 520px;
-    border-radius: 48px;
+    max-width: 800px;
+    width: 83.5vmin;
+    max-height: 520px;
+    height: 54.2vmin;
+    border-radius: 5vmin;
     background-color: $pet-bg;
     box-shadow: $shadow-box
 }
 
 .tape-reels {
-    width: 710px;
-    height: 340px;
-    margin-top: 35px;
+    max-width: 710px;
+    width: 74.1vmin;
+    max-height: 340px;
+    height: 35.5vmin;
+    margin-top: 3.6vmin;
     background: $pet-bg;
     box-sizing: border-box;
     box-shadow: $shadow-reels;
 }
 
 .tape-title {
-    width: 680px;
-    height: 280px;
-    border-radius: 24px;
+    max-width: 680px;
+    width: 71vmin;
+    max-height: 280px;
+    height: 29.2vmin;
+    border-radius: 2.5vmin;
     background: $bg_theme1;
     display: flex;
     justify-content: flex-end;
@@ -29,14 +35,14 @@
 .lines {
     position: relative;
     width: 100%;
-    height: 102px;
-    margin-bottom: 40px;
+    height: 10.65vmin;
+    margin-bottom: 4.2vmin;
 
     .line1,
     .line2,
     .line3 {
         width: 100%;
-        height: calc(102px / 3);
+        height: calc(10.65vmin / 3);
         position: absolute;
     }
 
@@ -47,19 +53,19 @@
 
     .line2 {
         background-color: $color2_theme1;
-        top: 34px;
+        top: 3.55vmin;
     }
 
     .line3 {
         background-color: $color3_theme1;
-        top: 68px;
+        top: 7.10vmin;
     }
 }
 
 .tape-window {
     position: relative;
-    width: 450px;
-    height: 102px;
+    width: 46.5vmin;
+    height: 10.65vmin;
     z-index: 1;
     background-color: $pet_bg;
     display: flex;
@@ -67,35 +73,47 @@
     justify-content: space-around;
 
     .tape-music {
-        width: 80px;
-        height: 80px;
+        max-width: 80px;
+        width: 8.4vmin;
+        max-height: 80px;
+        height: 8.4vmin;
         border-radius: 100%;
         box-shadow: $shadow-tape;
 
         .tape-music-in {
-            width: 48px;
-            height: 48px;
+            max-width: 48px;
+            width: 5vmin;
+            max-height: 48px;
+            height: 5vmin;
             border-radius: 100%;
-            border: 8px solid #fff;
+            border: 0.85vmin solid #fff;
             background-color: $bg_theme1;
         }
     }
 
     .tape-view {
-        width: 160px;
-        height: 60px;
-        margin-bottom: 10px;
+        max-width: 160px;
+        width: 16.7vmin;
+        max-height: 60px;
+        height: 6.2vmin;
+        margin-bottom: 1vmin;
         background-color: $bg_theme1;
     }
 }
 
 .tape-in-out {
-    margin-top: 25px;
+    background-image: url(../img/tape-shadow.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 2.58vmin;
     background-color: $pet-bg;
-    width: 520px;
-    clip-path: polygon(0% 100%, 20% 0%, 80% 0%, 100% 100%);
-    height: 120px;
-    box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1); // box-shadow:  0px 4px 8px rgba(255, 255, 255, 0.05);
+    max-width: 520px;
+    width: 54.3vmin;
+    max-height: 120px;
+    height: 12.5vmin;
+    clip-path: polygon(0% 100%, 6.2vmin 0%, 48.12vmin 0%, 100% 100%);
+    // box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1); // box-shadow:  0px 4px 8px rgba(255, 255, 255, 0.05);
 }
 
 // .tape-border-left, .tape-border-right {
