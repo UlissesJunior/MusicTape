@@ -24,9 +24,10 @@ function Pet() {
             </div>
           </div>
         </div>
-        <div className="tape-in-out">
-          <div className="tape-border-left"></div>
-          <div className="tape-border-right"></div>
+        <div className="shadow">
+          <div className="shadow">
+            <div className="tape-in-out"></div>
+          </div>
         </div>
       </div>
     </div>

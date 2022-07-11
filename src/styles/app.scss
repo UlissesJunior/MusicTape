@@ -26,6 +26,7 @@
 
 .center_low {
     @include center();
+    flex-direction: column;
 }
 
 .start {

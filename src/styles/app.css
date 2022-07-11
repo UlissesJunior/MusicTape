@@ -160,9 +160,11 @@
 }
 
 .tape-in-out {
-  position: absolute;
-  bottom: 0;
-  width: 510px;
+  margin-top: 25px;
+  background-color: #333;
+  width: 520px;
+  -webkit-clip-path: polygon(0% 100%, 20% 0%, 80% 0%, 100% 100%);
+          clip-path: polygon(0% 100%, 20% 0%, 80% 0%, 100% 100%);
   height: 120px;
   -webkit-box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
           box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
@@ -261,6 +263,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .start {
