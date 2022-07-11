@@ -102,45 +102,13 @@
 }
 
 .tape-in-out {
-    background-image: url(../img/tape-shadow.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin-top: 2.58vmin;
-    background-color: $pet-bg;
-    max-width: 520px;
+    margin-top: 2.1vmin;
+    background-color: #333;
+    max-width: 460px; //580
     width: 54.3vmin;
-    max-height: 120px;
+    max-height: 116px;
     height: 12.5vmin;
-    clip-path: polygon(0% 100%, 6.2vmin 0%, 48.12vmin 0%, 100% 100%);
-    // box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1); // box-shadow:  0px 4px 8px rgba(255, 255, 255, 0.05);
+    position: relative;
+    transform: perspective(8px) rotateX(.8deg);
+    box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
 }
-
-// .tape-border-left, .tape-border-right {
-//     position: absolute;
-
-//     bottom: 0;
-//     z-index: 2;
-
-//     // width: 0px;
-//     // height: 0px;
-// }
-// .tape-border-left {
-//     background: url(../img/border-left.png);
-//     width: 60px;
-//     height: 120px;
-//     left: -56px;
-//     // border-top: 120px solid #666;
-//     // border-right: 70px solid #333;
-// }
-
-// .tape-border-right {
-//     background: url(../img/border-right.png);
-//     width: 60px;
-//     height: 120px;
-//     right: -60px;
-//     // border-top: 120px solid rgba(255, 255, 255, 0.05);
-//     // border-left: 70px solid orange; 
-
-//     // box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
-// }

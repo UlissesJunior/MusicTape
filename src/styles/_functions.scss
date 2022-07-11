@@ -49,6 +49,13 @@
     bottom: 20px;
 }
 
+.right {
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
 .row {
     display: flex;
     flex-direction: row;
@@ -63,7 +70,7 @@
 .arrow::after, .arrow::before {
     content: "";
     width: 32px;
-    height: 8px;
+    height: 6px;
     border-radius: 100px;
     background-color: $color1_theme1;
     position: absolute;
@@ -74,6 +81,6 @@
 }
 
 .arrow::before {
-    top: 18px;
+    top: 19px;
     transform:rotate(45deg);
 }

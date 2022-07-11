@@ -11,6 +11,10 @@
     font-family: Radwave, Poppins, Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: $bg_home;
+}
+
 .container {
     position: relative;
     width: 100vw;
@@ -18,3 +22,41 @@
     @include background ();
 }
 
+.container-max {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 4vmin;
+}
+
+a {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+h1, h2 {
+    font-size: 12.5vmin;
+}
+
+h1 {
+    color: $color1_theme1;
+    margin-top: 20vmin;
+}
+
+h2 {
+    width: 60%;
+    color: #fff;
+}
+
+h2:hover {
+    cursor: pointer;
+    animation: 0.8s ease;
+    background-color: $color1_theme1;
+    color: $bg_theme1;
+}
+
+span {
+    -webkit-text-stroke: 1px $color1_theme1;
+    color: $bg_home;
+}

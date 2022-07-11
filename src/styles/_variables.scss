@@ -8,9 +8,9 @@ $color3_theme1: #9C8CFF;
 
 $pet-bg: #333;
 
-$shadow-box: inset 2px -4px 8px rgba(0, 0, 0, 0.2), inset -2px 4px 8px rgba(255, 255, 255, 0.2);
-$shadow-reels: inset 2px -2px 8px rgba(255, 255, 255, 0.1), inset -4px 4px 8px rgba(0, 0, 0, 0.1);
-$shadow-tape: inset 4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(255, 255, 255, 0.1);
+$shadow-box: inset 0.2vmin -0.4vmin 0.8vmin rgba(0, 0, 0, 0.2), inset -2px 4px 8px rgba(255, 255, 255, 0.2);
+$shadow-reels: inset 0.2vmin -0.2vmin 0.8vmin rgba(255, 255, 255, 0.1), inset -4px 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-tape: inset 0.4vmin 0.4vmin 0.4vmin rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(255, 255, 255, 0.1);
 $shadow-in-out: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
 
 //Fontes
