@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@font-face {
+  font-family: 'Radwave';
+  src: url(./Radwave.OTF);
+}
+
+@-webkit-keyframes playing1 {
+  0% {
+    height: 24px;
+  }
+  50% {
+    height: 12px;
+  }
+  100% {
+    height: 24px;
+  }
+}
+
+@keyframes playing1 {
+  0% {
+    height: 24px;
+  }
+  50% {
+    height: 12px;
+  }
+  100% {
+    height: 24px;
+  }
+}
+
+@-webkit-keyframes playing2 {
+  0% {
+    height: 12px;
+  }
+  50% {
+    height: 24px;
+  }
+  100% {
+    height: 12px;
+  }
+}
+
+@keyframes playing2 {
+  0% {
+    height: 12px;
+  }
+  50% {
+    height: 24px;
+  }
+  100% {
+    height: 12px;
+  }
+}
+
+.box {
+  position: relative;
+  width: 800px;
+  height: 520px;
+  border-radius: 48px;
+  background-color: #333;
+  -webkit-box-shadow: inset 2px -4px 8px rgba(0, 0, 0, 0.2), inset -2px 4px 8px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 2px -4px 8px rgba(0, 0, 0, 0.2), inset -2px 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.tape-reels {
+  width: 710px;
+  height: 340px;
+  margin-top: 35px;
+  background: #333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 2px -2px 8px rgba(255, 255, 255, 0.1), inset -4px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px -2px 8px rgba(255, 255, 255, 0.1), inset -4px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tape-title {
+  width: 680px;
+  height: 280px;
+  border-radius: 24px;
+  background: #DECDF7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lines {
+  position: relative;
+  width: 100%;
+  height: 102px;
+  margin-bottom: 40px;
+}
+
+.lines .line1,
+.lines .line2,
+.lines .line3 {
+  width: 100%;
+  height: calc(102px / 3);
+  position: absolute;
+}
+
+.lines .line1 {
+  background-color: #3231F1;
+  margin-top: 0;
+}
+
+.lines .line2 {
+  background-color: #9174E4;
+  top: 34px;
+}
+
+.lines .line3 {
+  background-color: #9C8CFF;
+  top: 68px;
+}
+
+.tape-window {
+  position: relative;
+  width: 450px;
+  height: 102px;
+  z-index: 1;
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tape-window .tape-music {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  -webkit-box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(255, 255, 255, 0.1);
+          box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(255, 255, 255, 0.1);
+}
+
+.tape-window .tape-music .tape-music-in {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+  border: 8px solid #fff;
+  background-color: #DECDF7;
+}
+
+.tape-window .tape-view {
+  width: 160px;
+  height: 60px;
+  margin-bottom: 10px;
+  background-color: #DECDF7;
+}
+
+.tape-in-out {
+  position: absolute;
+  bottom: 0;
+  width: 510px;
+  height: 120px;
+  -webkit-box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.playing {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3231F1;
+}
+
+.playing .playing-1,
+.playing .playing-2 {
+  width: 4px;
+  border-radius: 100px;
+  background-color: #3231F1;
+}
+
+.playing .playing-1 {
+  height: 24px;
+}
+
+.playing .playing-2 {
+  height: 12px;
+}
+
+.animate-1 {
+  -webkit-animation: playing1 1.8s ease-in-out infinite;
+          animation: playing1 1.8s ease-in-out infinite;
+}
+
+.animate-2 {
+  -webkit-animation: playing2 1.8s ease-in-out infinite;
+          animation: playing2 1.8s ease-in-out infinite;
+}
+
+.music-playing {
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #3231F1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: Radwave, Poppins, Arial, Helvetica, sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #DECDF7;
+}
+
+.center_high {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.center_low {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.start {
+  position: absolute;
+  top: 30px;
+  left: 17px;
+}
+
+.end {
+  position: absolute;
+  width: calc( 100vw - 40px);
+  bottom: 20px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.arrow {
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.arrow::after, .arrow::before {
+  content: "";
+  width: 32px;
+  height: 8px;
+  border-radius: 100px;
+  background-color: #3231F1;
+  position: absolute;
+}
+
+.arrow::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.arrow::before {
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+/*# sourceMappingURL=app.css.map */

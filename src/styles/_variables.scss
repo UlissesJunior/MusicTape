@@ -1,0 +1,22 @@
+//Variáveis
+$bg_home: #9174E4;
+
+$bg_theme1: #DECDF7;
+$color1_theme1: #3231F1;
+$color2_theme1: #9174E4;
+$color3_theme1: #9C8CFF;
+
+$pet-bg: #333;
+
+$shadow-box: inset 2px -4px 8px rgba(0, 0, 0, 0.2), inset -2px 4px 8px rgba(255, 255, 255, 0.2);
+$shadow-reels: inset 2px -2px 8px rgba(255, 255, 255, 0.1), inset -4px 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-tape: inset 4px 4px 4px rgba(0, 0, 0, 0.1), inset 4px -4px 4px rgba(255, 255, 255, 0.1);
+$shadow-in-out: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
+
+//Fontes
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+    font-family: 'Radwave';
+    src: url(./Radwave.OTF);
+}

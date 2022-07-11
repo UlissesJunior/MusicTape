@@ -1,0 +1,40 @@
+.playing {
+    // animation: playing 2s ease;
+    position: relative;
+    display: flex;
+    width: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $color1_theme1;
+
+    .playing-1,
+    .playing-2 {
+        width: 4px;
+        border-radius: 100px;
+        background-color: $color1_theme1;
+    }
+
+    .playing-1 {
+        height: 24px;
+    }
+
+    .playing-2 {
+        height: 12px;
+    }
+}
+
+.animate-1 {
+    animation: playing1 1.8s ease-in-out infinite;
+}
+
+.animate-2 {
+    animation: playing2 1.8s ease-in-out infinite;
+}
+
+.music-playing {
+    margin-left: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    color: $color1_theme1;
+}

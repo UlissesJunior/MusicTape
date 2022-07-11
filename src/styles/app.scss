@@ -1,0 +1,69 @@
+@import "variables";
+@import "functions";
+@import "animation";
+@import "tape";
+@import "play";
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: Radwave, Poppins, Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    @include background ();
+}
+
+.center_high {
+    @include center();
+    width: 100vw;
+    height: 100vh;
+}
+
+.center_low {
+    @include center();
+}
+
+.start {
+    position: absolute;
+    top: 30px;
+    left: 17px;
+}
+.end {
+    position: absolute;
+    width: calc( 100vw - 40px );
+    bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow {
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.arrow::after, .arrow::before {
+    content: "";
+    width: 32px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: $color1_theme1;
+    position: absolute;
+}
+
+.arrow::after {
+    transform:rotate(-45deg);
+}
+
+.arrow::before {
+    top: 18px;
+    transform:rotate(45deg);
+}

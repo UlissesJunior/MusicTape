@@ -1,0 +1,127 @@
+.box {
+    position: relative;
+    width: 800px;
+    height: 520px;
+    border-radius: 48px;
+    background-color: $pet-bg;
+    box-shadow: $shadow-box
+}
+
+.tape-reels {
+    width: 710px;
+    height: 340px;
+    margin-top: 35px;
+    background: $pet-bg;
+    box-sizing: border-box;
+    box-shadow: $shadow-reels;
+}
+
+.tape-title {
+    width: 680px;
+    height: 280px;
+    border-radius: 24px;
+    background: $bg_theme1;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.lines {
+    position: relative;
+    width: 100%;
+    height: 102px;
+    margin-bottom: 40px;
+
+    .line1,
+    .line2,
+    .line3 {
+        width: 100%;
+        height: calc(102px / 3);
+        position: absolute;
+    }
+
+    .line1 {
+        background-color: $color1_theme1;
+        margin-top: 0;
+    }
+
+    .line2 {
+        background-color: $color2_theme1;
+        top: 34px;
+    }
+
+    .line3 {
+        background-color: $color3_theme1;
+        top: 68px;
+    }
+}
+
+.tape-window {
+    position: relative;
+    width: 450px;
+    height: 102px;
+    z-index: 1;
+    background-color: $pet_bg;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .tape-music {
+        width: 80px;
+        height: 80px;
+        border-radius: 100%;
+        box-shadow: $shadow-tape;
+
+        .tape-music-in {
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+            border: 8px solid #fff;
+            background-color: $bg_theme1
+        }
+    }
+
+    .tape-view {
+        width: 160px;
+        height: 60px;
+        margin-bottom: 10px;
+        background-color: $bg_theme1;
+    }
+}
+
+.tape-in-out {
+    position: absolute;
+    bottom: 0;
+    width: 510px; // width: 450px;
+    height: 120px;
+    box-shadow: $shadow-in-out // box-shadow:  0px 4px 8px rgba(255, 255, 255, 0.05);
+}
+
+// .tape-border-left, .tape-border-right {
+//     position: absolute;
+
+//     bottom: 0;
+//     z-index: 2;
+
+//     // width: 0px;
+//     // height: 0px;
+// }
+// .tape-border-left {
+//     background: url(../img/border-left.png);
+//     width: 60px;
+//     height: 120px;
+//     left: -56px;
+//     // border-top: 120px solid #666;
+//     // border-right: 70px solid #333;
+// }
+
+// .tape-border-right {
+//     background: url(../img/border-right.png);
+//     width: 60px;
+//     height: 120px;
+//     right: -60px;
+//     // border-top: 120px solid rgba(255, 255, 255, 0.05);
+//     // border-left: 70px solid orange; 
+
+//     // box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
+// }
