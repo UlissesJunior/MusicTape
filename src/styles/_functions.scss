@@ -19,11 +19,34 @@
 }
 
 @mixin background() {
-    background: url(../img/bg_1.png);
+    background: $bg-img-1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: $bg_theme1;
+}
+
+@mixin loading() {
+    border-right: 0;
+    border-left: 0;
+  
+    background-image: linear-gradient(transparent, transparent),
+    linear-gradient(to right, #FF0012, #FF4900, #F2FF00,  #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+    background-clip: padding-box, border-box;
+    
+    background-size: 200% auto;
+    animation: loading 2.5s infinite linear;
+}
+
+@mixin loading-3() {
+    border-right: 0;
+    border-left: 0;
+  
+    background-image: linear-gradient($pet_bg_theme2, $pet-bg),
+    linear-gradient(to right, #FF0012, #FF4900, #F2FF00,  #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+    background-clip: padding-box, border-box;
+    
+    background-size: 200% auto;
+    animation: loading 2.5s infinite linear;
 }
 
 .center_high {
@@ -69,8 +92,10 @@
 
 .arrow::after, .arrow::before {
     content: "";
-    width: 32px;
-    height: 6px;
+    max-width: 32px;
+    width: 3.3vmin;
+    max-height: 6px;
+    height: 0.6vmin;
     border-radius: 100px;
     background-color: $color1_theme1;
     position: absolute;
@@ -81,6 +106,6 @@
 }
 
 .arrow::before {
-    top: 19px;
+    top: 2vmin;
     transform:rotate(45deg);
 }

@@ -1,3 +1,4 @@
+// Tape CSS
 .box {
     position: relative;
     max-width: 800px;
@@ -103,7 +104,7 @@
 
 .tape-in-out {
     margin-top: 2.1vmin;
-    background-color: #333;
+    background-color: $pet_bg;
     max-width: 460px; //580
     width: 54.3vmin;
     max-height: 116px;

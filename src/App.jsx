@@ -10,11 +10,15 @@ function App() {
         </h1>
       </div>
       <div className="right">
-        <Link to="/play">
+        <Link to="/toplay">
           <h2>To Play</h2>
         </Link>
+        <Link to="/tostudy">
         <h2>To Study</h2>
+        </Link>
+        <Link to="/torelax">
         <h2>To Relax</h2>
+        </Link>
       </div>
     </div>
   );

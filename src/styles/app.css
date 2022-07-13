@@ -80,8 +80,10 @@
 
 .arrow::after, .arrow::before {
   content: "";
-  width: 32px;
-  height: 6px;
+  max-width: 32px;
+  width: 3.3vmin;
+  max-height: 6px;
+  height: 0.6vmin;
   border-radius: 100px;
   background-color: #3231F1;
   position: absolute;
@@ -93,7 +95,7 @@
 }
 
 .arrow::before {
-  top: 19px;
+  top: 2vmin;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -143,6 +145,18 @@
   }
   100% {
     height: 12px;
+  }
+}
+
+@-webkit-keyframes loading {
+  to {
+    background-position-x: 200%;
+  }
+}
+
+@keyframes loading {
+  to {
+    background-position-x: 200%;
   }
 }
 
@@ -279,6 +293,120 @@
           box-shadow: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px rgba(0, 0, 0, 0.1);
 }
 
+#toplay .container {
+  background: url(../img/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg_2.png);
+}
+
+#toplay .tape-title,
+#toplay .tape-music-in,
+#toplay .tape-view {
+  background-color: #040833;
+}
+
+#toplay .tape-in-out,
+#toplay .tape-reels,
+#toplay .box {
+  border-right: 0;
+  border-left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e2e33), to(#333)), -webkit-gradient(linear, left top, right top, from(#FF0012), color-stop(#FF4900), color-stop(#F2FF00), color-stop(#03FE01), color-stop(#00FFE5), color-stop(#0017FF), color-stop(#F900FF), to(#FF0012));
+  background-image: linear-gradient(#2e2e33, #333), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+  background-clip: padding-box, border-box;
+  background-size: 200% auto;
+  -webkit-animation: loading 2.5s infinite linear;
+          animation: loading 2.5s infinite linear;
+  border: solid 1px transparent;
+}
+
+#toplay .tape-window {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e2e33), to(#333));
+  background-image: linear-gradient(#2e2e33, #333);
+}
+
+#toplay .tape-in-out {
+  border-bottom: 0;
+}
+
+#toplay .tape-music-in {
+  background-color: rgba(0, 170, 241, 0.6);
+}
+
+#toplay .line1,
+#toplay .line2 {
+  border: solid calc(10.65vmin / 3) transparent;
+}
+
+#toplay .line1 {
+  border-right: 0;
+  border-left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#FF0012), color-stop(#FF4900), color-stop(#F2FF00), color-stop(#03FE01), color-stop(#00FFE5), color-stop(#0017FF), color-stop(#F900FF), to(#FF0012));
+  background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+  background-clip: padding-box, border-box;
+  background-size: 200% auto;
+  -webkit-animation: loading 2.5s infinite linear;
+          animation: loading 2.5s infinite linear;
+}
+
+#toplay .line2 {
+  border-right: 0;
+  border-left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(transparent)), -webkit-gradient(linear, left top, right top, from(#FF0012), color-stop(#FF4900), color-stop(#F2FF00), color-stop(#03FE01), color-stop(#00FFE5), color-stop(#0017FF), color-stop(#F900FF), to(#FF0012));
+  background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+  background-clip: padding-box, border-box;
+  background-size: 200% auto;
+  -webkit-animation: loading 2.5s infinite linear;
+          animation: loading 2.5s infinite linear;
+  border-bottom: 0;
+}
+
+#toplay .line3 {
+  display: none;
+}
+
+#toplay .music-playing {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#toplay .playing-1,
+#toplay .playing-2,
+#toplay .arrow::after,
+#toplay .arrow::before {
+  background-color: white;
+}
+
+#torelax .container {
+  background: url(../img/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg_3.png);
+}
+
+#torelax .tape-title,
+#torelax .tape-music-in,
+#torelax .tape-view {
+  background-color: #A9FFD1;
+}
+
+#torelax .tape-title {
+  background-color: #F5EFFD;
+}
+
+#torelax .line1 {
+  background-color: #117438;
+}
+
+#torelax .line2 {
+  background-color: #1ED760;
+}
+
+#torelax .line3 {
+  background-color: #6BF29A;
+}
+
 .playing {
   position: relative;
   display: -webkit-box;
@@ -349,7 +477,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #DECDF7;
 }
 
 .container-max {
@@ -359,8 +486,8 @@ body {
 }
 
 a {
+  position: relative;
   text-decoration: none;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,14 +506,15 @@ h1 {
 }
 
 h2 {
-  width: 60%;
+  min-width: 42.8vmin;
+  width: 100%;
   color: #fff;
 }
 
 h2:hover {
   cursor: pointer;
-  -webkit-animation: 0.8s ease;
-          animation: 0.8s ease;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
   background-color: #3231F1;
   color: #DECDF7;
 }

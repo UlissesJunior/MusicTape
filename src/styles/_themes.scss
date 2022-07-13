@@ -1,0 +1,97 @@
+//Tema To Play
+#toplay {
+    .container {
+        @include background();
+        background-image: $bg_img_2;
+    }
+
+    // .line1, .line2, .arrow::before, .arrow::after {
+    //     @include loading();
+    // }
+
+    .tape-title,
+    .tape-music-in,
+    .tape-view {
+        background-color: $bg_theme2;
+    }
+
+    .tape-in-out,
+    .tape-reels,
+    .box {
+        @include loading-3();
+        border: solid 1px transparent
+    }
+
+    .tape-window {
+        background-image: linear-gradient($pet_bg_theme2, $pet-bg);
+    }
+
+    .tape-in-out {
+        border-bottom: 0;
+    }
+
+    .tape-music-in {
+        background-color: rgba(0, 170, 241, 0.6);
+    }
+
+    .line1,
+    .line2 {
+        border: solid calc(10.65vmin / 3) transparent;
+    }
+
+    .line1 {
+        @include loading();
+    }
+
+    .line2 {
+        @include loading();
+        border-bottom: 0;
+    }
+
+    .line3 {
+        display: none;
+    }
+
+    .music-playing {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .playing-1,
+    .playing-2,
+    .arrow::after,
+    .arrow::before {
+        background-color: rgba(255, 255, 255, 1); //0.8
+    }
+
+}
+
+//Tema To Relax
+#torelax {
+    .container {
+        @include background();
+        background-image: $bg_img_3;
+    }
+
+    .tape-title,
+    .tape-music-in,
+    .tape-view {
+        background-color: $bg_theme3;
+    }
+
+    .tape-title {
+        background-color: $title-bg;
+    }
+
+    .line1 {
+        background-color: $color1_theme3;
+    }
+
+    .line2 {
+        background-color: $color2_theme3;
+    }
+
+    .line3 {
+        background-color: $color3_theme3;
+    }
+
+}

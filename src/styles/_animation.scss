@@ -25,3 +25,9 @@
         height: 12px;
     }
 }
+
+@keyframes loading {
+    to {
+      background-position-x: 200%;
+    }
+  }

@@ -9,7 +9,7 @@ render(
   <BrowserRouter>
     <Routes>
         <Route path="/" exact={true} element={<App />}></Route>
-        <Route path="/play" exact={true} element={<Music />}></Route>
+        <Route path="/:id" element={<Music />}></Route>
         {/* <Route path="*" element={<NotFound/>}></Route> */}
     </Routes>
   </BrowserRouter>,

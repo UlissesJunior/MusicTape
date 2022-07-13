@@ -2,6 +2,7 @@
 @import "functions";
 @import "animation";
 @import "tape";
+@import "themes";
 @import "play";
 
 * {
@@ -29,8 +30,9 @@ body {
 }
 
 a {
+    position: relative;
     text-decoration: none;
-    width: 100%;
+    // word-break: keep-all;
     display: flex;
     justify-content: end;
 }
@@ -45,13 +47,14 @@ h1 {
 }
 
 h2 {
-    width: 60%;
+    min-width: 42.8vmin;
+    width: 100%;
     color: #fff;
 }
 
 h2:hover {
     cursor: pointer;
-    animation: 0.8s ease;
+    transition: all 0.6s;
     background-color: $color1_theme1;
     color: $bg_theme1;
 }
