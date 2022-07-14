@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @font-face {
   font-family: 'Radwave';
-  src: url(./Radwave.OTF);
+  src: url(./Radwave.OTF), url("/src/styles/fonts/Radwave.OTF") format("OTF");
+  font-display: swap;
 }
 
 .center_high {
@@ -70,6 +71,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  position: relative;
 }
 
 .arrow {
@@ -98,6 +100,12 @@
   top: 2vmin;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+.play {
+  color: #fff;
+  position: absolute;
+  right: 0;
 }
 
 @-webkit-keyframes playing1 {
@@ -377,6 +385,10 @@
   background-color: white;
 }
 
+#toplay .playing {
+  color: #fff;
+}
+
 #torelax .container {
   background: url(../img/bg_1.png);
   background-repeat: no-repeat;
@@ -462,7 +474,7 @@
   padding: 0;
   margin: 0;
   border: 0;
-  font-family: Radwave, Poppins, Arial, Helvetica, sans-serif;
+  font-family: 'Radwave', 'Poppins', Arial, Helvetica, sans-serif;
 }
 
 body {

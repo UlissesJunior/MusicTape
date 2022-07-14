@@ -82,6 +82,7 @@
 .row {
     display: flex;
     flex-direction: row;
+    position: relative;
 }
 
 .arrow {
@@ -108,4 +109,10 @@
 .arrow::before {
     top: 2vmin;
     transform:rotate(45deg);
+}
+
+.play {
+    color: #fff;
+    position: absolute;
+    right: 0;
 }

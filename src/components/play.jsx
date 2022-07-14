@@ -1,6 +1,6 @@
 import "../styles/app.css";
 
-function Play() {
+function Play( ) {
   return (
     <>
       <div className="row">
@@ -9,7 +9,11 @@ function Play() {
           <div className="playing-2 animate-2"></div>
           <div className="playing-1 animate-1"></div>
         </div>
-        <div className="music-playing">Costa Gold - UAU</div>
+        <div className="music-playing">
+          Costa Gold - UAU
+          <div className="album">.155</div>
+        </div>
+        <div className="play" >▶</div>
       </div>
     </>
   );
