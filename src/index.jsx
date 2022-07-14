@@ -3,12 +3,14 @@ import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './pages/App'
 import Music from './pages/Music'
+import ToPlay from "./pages/api/toplay"
 
 render(
   <BrowserRouter>
     <Routes>
         <Route path="/" exact={true} element={<App />}></Route>
         <Route path="/:id" element={<Music />}></Route>
+        <Route path="/api/toplay" element={<ToPlay />}></Route>
         {/* <Route path="*" element={<NotFound/>}></Route> */}
     </Routes>
   </BrowserRouter>,
