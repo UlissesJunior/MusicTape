@@ -20,6 +20,9 @@ function App() {
         <Link to="/torelax">
         <h2>To Relax</h2>
         </Link>
+        <Link to="/api/toplay">
+        <h2>API</h2>
+        </Link>
       </div>
     </div>
   );
