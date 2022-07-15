@@ -38,3 +38,32 @@
     font-weight: bold;
     color: $color1_theme1;
 }
+
+.play-button, .pause-button {
+    @include center();
+    position: relative;
+}
+
+.pause {
+    width: 14px;
+    height: 24px;
+    background-image: url(../img/pause.png);
+    cursor: pointer;
+}
+
+.play {
+    // max-width: 20px;
+    // width: 2vmin;
+    // max-height: 24px;
+    // height: 2.4vmin;
+    width: 18px;
+    height: 22px;
+    background-image: url(../img/play.png);
+    cursor: pointer;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

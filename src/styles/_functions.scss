@@ -116,3 +116,8 @@
     position: absolute;
     right: 0;
 }
+
+.inline {
+    display: flex;
+    flex-direction: row;
+}
