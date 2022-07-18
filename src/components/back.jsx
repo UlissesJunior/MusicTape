@@ -1,11 +1,11 @@
 import "../styles/app.css";
 import { Link } from "react-router-dom";
 
-function Back() {
+function Back({ sound }) {
   return (
     <>
       <Link to ="/">
-      <div className="arrow"></div>
+      <div onClick={() => sound.stop()} className="arrow"></div>
       </Link>
     </>
   );

@@ -209,7 +209,9 @@
   max-height: 280px;
   height: 29.2vmin;
   border-radius: 2.5vmin;
-  background: #DECDF7;
+  background: rgba(245, 239, 253, 0.8);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -254,7 +256,9 @@
 
 .tape-window {
   position: relative;
+  max-width: 470px;
   width: 46.5vmin;
+  max-height: 108px;
   height: 10.65vmin;
   z-index: 1;
   background-color: #333;
@@ -348,10 +352,6 @@
   border-bottom: 0;
 }
 
-#toplay .tape-music-in {
-  background-color: rgba(0, 170, 241, 0.6);
-}
-
 #toplay .line1,
 #toplay .line2 {
   border: solid calc(10.65vmin / 3) transparent;
@@ -415,7 +415,6 @@
   background-image: url(../img/bg_3.png);
 }
 
-#torelax .tape-title,
 #torelax .tape-music-in,
 #torelax .tape-view {
   background-color: #A9FFD1;
@@ -483,7 +482,7 @@
 
 .music-playing {
   margin-left: 16px;
-  font-size: 16px;
+  font-size: clamp(10px, 1.6vmin, 16px);
   font-weight: bold;
   color: #3231F1;
 }
@@ -501,9 +500,13 @@
   position: relative;
 }
 
+.pause-button {
+  width: 18px;
+}
+
 .pause {
   width: 14px;
-  height: 24px;
+  height: 22px;
   background-image: url(../img/pause.png);
   cursor: pointer;
 }

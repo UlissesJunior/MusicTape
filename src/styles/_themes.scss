@@ -8,7 +8,7 @@
     // .line1, .line2, .arrow::before, .arrow::after {
     //     @include loading();
     // }
-
+    
     .tape-title,
     .tape-music-in,
     .tape-view {
@@ -30,9 +30,9 @@
         border-bottom: 0;
     }
 
-    .tape-music-in {
-        background-color: rgba(0, 170, 241, 0.6);
-    }
+    // .tape-music-in {
+    //     background-color: rgba(0, 170, 241, 0.6);
+    // }
 
     .line1,
     .line2 {
@@ -84,7 +84,6 @@
         background-image: $bg_img_3;
     }
 
-    .tape-title,
     .tape-music-in,
     .tape-view {
         background-color: $bg_theme3;

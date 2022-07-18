@@ -34,7 +34,7 @@
 
 .music-playing {
     margin-left: 16px;
-    font-size: 16px;
+    font-size: clamp(10px, 1.6vmin, 16px);
     font-weight: bold;
     color: $color1_theme1;
 }
@@ -44,9 +44,13 @@
     position: relative;
 }
 
+.pause-button {
+    width: 18px;
+}
+
 .pause {
     width: 14px;
-    height: 24px;
+    height: 22px;
     background-image: url(../img/pause.png);
     cursor: pointer;
 }
