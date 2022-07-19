@@ -33,6 +33,6 @@ $shadow-in-out: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px 
 
 @font-face {
     font-family: 'Radwave';
-    src: url(./Radwave.OTF), url("/src/styles/fonts/Radwave.OTF") format("OTF");
+    src: url(../styles/fonts/Radwave.otf), url("/src/styles/fonts/Radwave.otf") format("otf");
     font-display: swap;
 }

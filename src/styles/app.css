@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @font-face {
   font-family: 'Radwave';
-  src: url(./Radwave.OTF), url("/src/styles/fonts/Radwave.OTF") format("OTF");
+  src: url(../styles/fonts/Radwave.otf), url("/src/styles/fonts/Radwave.otf") format("otf");
   font-display: swap;
 }
 
@@ -209,7 +209,7 @@
   max-height: 280px;
   height: 29.2vmin;
   border-radius: 2.5vmin;
-  background: rgba(245, 239, 253, 0.8);
+  background: #fff;
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   display: -webkit-box;
@@ -418,10 +418,6 @@
 #torelax .tape-music-in,
 #torelax .tape-view {
   background-color: #A9FFD1;
-}
-
-#torelax .tape-title {
-  background-color: #F5EFFD;
 }
 
 #torelax .line1 {
