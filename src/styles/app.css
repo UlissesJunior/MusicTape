@@ -38,13 +38,19 @@
 .start {
   position: absolute;
   top: 30px;
-  left: 17px;
+  left: 16px;
 }
 
 .end {
   position: absolute;
-  width: calc( 100vw - 40px);
+  width: calc(100vw - 40px);
   bottom: 20px;
+}
+
+.end-top {
+  position: absolute;
+  top: 30px;
+  right: 16px;
 }
 
 .right {
@@ -80,7 +86,8 @@
   height: 40px;
 }
 
-.arrow::after, .arrow::before {
+.arrow::after,
+.arrow::before {
   content: "";
   max-width: 32px;
   width: 3.3vmin;

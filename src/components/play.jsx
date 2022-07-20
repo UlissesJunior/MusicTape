@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles/app.css";
 
-function Menu({ sound }) {
+function Button({ sound }) {
   const [active, setMode] = useState(false);
   const ToggleMode = () => {
     setMode(!active);
@@ -16,7 +16,7 @@ function Menu({ sound }) {
             <div className="playing-1"></div>
           </div>
           <div className="music-playing">
-            League of Legendes - Take Over
+            League of Legends - Take Over
             <div className="album">Take Over</div>
           </div>
         </div>
@@ -35,7 +35,7 @@ function Menu({ sound }) {
           <div className="playing-1 animate-1"></div>
         </div>
         <div className="music-playing">
-          League of Legendes - Take Over
+          League of Legends - Take Over
           <div className="album">Take Over</div>
         </div>
       </div>
@@ -50,7 +50,7 @@ function Play({ sound }) {
   return (
     <>
       <div className="row">
-        <Menu sound={sound} />
+        <Button sound={sound} />
       </div>
     </>
   );

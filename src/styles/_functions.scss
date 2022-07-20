@@ -28,11 +28,11 @@
 @mixin loading() {
     border-right: 0;
     border-left: 0;
-  
+
     background-image: linear-gradient(transparent, transparent),
-    linear-gradient(to right, #FF0012, #FF4900, #F2FF00,  #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+        linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
     background-clip: padding-box, border-box;
-    
+
     background-size: 200% auto;
     animation: loading 2.5s infinite linear;
 }
@@ -40,11 +40,11 @@
 @mixin loading-3() {
     border-right: 0;
     border-left: 0;
-  
+
     background-image: linear-gradient($pet_bg_theme2, $pet-bg),
-    linear-gradient(to right, #FF0012, #FF4900, #F2FF00,  #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+        linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
     background-clip: padding-box, border-box;
-    
+
     background-size: 200% auto;
     animation: loading 2.5s infinite linear;
 }
@@ -63,13 +63,19 @@
 .start {
     position: absolute;
     top: 30px;
-    left: 17px;
+    left: 16px;
 }
 
 .end {
     position: absolute;
-    width: calc( 100vw - 40px );
+    width: calc(100vw - 40px);
     bottom: 20px;
+}
+
+.end-top {
+    position: absolute;
+    top: 30px;
+    right: 16px;
 }
 
 .right {
@@ -91,7 +97,8 @@
     height: 40px;
 }
 
-.arrow::after, .arrow::before {
+.arrow::after,
+.arrow::before {
     content: "";
     max-width: 32px;
     width: 3.3vmin;
@@ -103,12 +110,12 @@
 }
 
 .arrow::after {
-    transform:rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .arrow::before {
     top: 2vmin;
-    transform:rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .play {

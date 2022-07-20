@@ -9,7 +9,6 @@ render(
     <Routes>
         <Route path="/" exact={true} element={<App />}></Route>
         <Route path="/:id" element={<Music />}></Route>
-        {/* <Route path="*" element={<NotFound/>}></Route> */}
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
