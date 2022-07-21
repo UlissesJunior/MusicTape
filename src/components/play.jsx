@@ -47,6 +47,12 @@ function Button({ sound }) {
 }
 
 function Play({ sound }) {
+  
+  // document.body.onkeyup = function (e) {
+  //   if (e.keyCode == 32 || e.keyCode == 13) {
+      
+  //   }
+  // }
   return (
     <>
       <div className="row">

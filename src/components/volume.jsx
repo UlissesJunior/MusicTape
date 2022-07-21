@@ -11,11 +11,11 @@ function Volume() {
   document.body.onkeyup = function (e) {
     if (e.keyCode == 38 && volView < 100) {
       console.log("Aumentando o Volume");
-      setVol(vol + 0.1);
+      setVol(vol + 0.05);
     }
     if (e.keyCode == 40 && volView > 0) {
       console.log("Abaixando o Volume");
-      setVol(vol - 0.1);
+      setVol(vol - 0.05);
     }
   };
 
