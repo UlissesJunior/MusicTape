@@ -4,8 +4,9 @@ import { useState } from "react";
 
 function Volume() {
   const [vol, setVol] = useState(1);
-  const volFixed = vol * 100;
+  const volFixed = (vol * 100);
   const volView = volFixed.toFixed(0);
+
   Howler.volume(vol);
 
   document.body.onkeyup = function (e) {

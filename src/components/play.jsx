@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../styles/app.css";
+import Playing from "./music-playing";
 
 function Button({ sound }) {
   const [active, setMode] = useState(false);
@@ -9,17 +10,7 @@ function Button({ sound }) {
   if (active === false) {
     return (
       <>
-        <div className="inline">
-          <div className="playing">
-            <div className="playing-1"></div>
-            <div className="playing-2"></div>
-            <div className="playing-1"></div>
-          </div>
-          <div className="music-playing">
-            League of Legends - Take Over
-            <div className="album">Take Over</div>
-          </div>
-        </div>
+        <Playing active={active}/>
         <div className="play-button" onClick={ToggleMode}>
           <div onClick={() => sound.play()} className="play"></div>
         </div>
@@ -28,17 +19,7 @@ function Button({ sound }) {
   }
   return (
     <>
-      <div className="inline">
-        <div className="playing">
-          <div className="playing-1 animate-1"></div>
-          <div className="playing-2 animate-2"></div>
-          <div className="playing-1 animate-1"></div>
-        </div>
-        <div className="music-playing">
-          League of Legends - Take Over
-          <div className="album">Take Over</div>
-        </div>
-      </div>
+      <Playing active={active}/>
       <div className="pause-button" onClick={ToggleMode}>
         <div onClick={() => sound.pause()} className="pause"></div>
       </div>
