@@ -28,12 +28,12 @@ function Music() {
           .list(`${params.id}`, {
             limit: 25,
           });
-        setData(data[1].name);
+        setData(data[0].name);
         setMusic(
           import.meta.env.VITE_TEST_STORAGE_URL +
             `${params.id}` +
             "/" +
-            `${data[1]?.name.replaceAll(" ", "%20")}`
+            `${data[0]?.name.replaceAll(" ", "%20")}`
         );
       } catch (e) {
         console.log(e);

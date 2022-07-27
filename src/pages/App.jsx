@@ -11,13 +11,13 @@ function App() {
         </h1>
       </div>
       <div className="right">
-        <Link to="/toplay">
+        <Link to="toplay">
           <h2>To Play</h2>
         </Link>
-        <Link to="/tostudy">
+        <Link to="tostudy">
         <h2>To Study</h2>
         </Link>
-        <Link to="/torelax">
+        <Link to="torelax">
         <h2>To Relax</h2>
         </Link>
       </div>
