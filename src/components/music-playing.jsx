@@ -11,7 +11,7 @@ function Playing({ active, data }) {
           <div className={active ? "playing-1 animate-1" : "playing-1"}></div>
         </div>
         <div className="music-playing">
-         {data}
+         {data.replace("%20", " ")}
           <div className="album">{params.id}</div>
         </div>
       </div>
