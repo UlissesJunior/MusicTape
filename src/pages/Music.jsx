@@ -1,6 +1,6 @@
 import "../styles/app.css";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { Howl } from "howler";
 import { supabase } from "../client/supabaseClient";
@@ -12,7 +12,7 @@ import Volume from "../components/volume";
 
 function Music() {
   const params = useParams();
-  const [Data, setData] = useState();
+  const [data, setData] = useState();
   const [music, setMusic] = useState();
 
   const sound = new Howl({
@@ -20,22 +20,27 @@ function Music() {
     html5: true,
     preload: true,
   });
-
-  async function HandleUpload() {
-    const { data, error } = await supabase.storage
-      .from("playlists")
-      .list(`${params.id}`, {
-        limit: 25,
-      });
-    setData(data[0].name.replace(" ", "%20"));
-    setMusic(
-      import.meta.env.VITE_TEST_STORAGE_URL +
-        `${params.id}` +
-        "/" +
-        `${Data}`
-    );
-  }
-  HandleUpload();
+  useEffect(() => {
+    async function HandleUpload() {
+      try {
+        const { data, error } = await supabase.storage
+          .from("playlists")
+          .list(`${params.id}`, {
+            limit: 25,
+          });
+        setData(data[1].name);
+        setMusic(
+          import.meta.env.VITE_TEST_STORAGE_URL +
+            `${params.id}` +
+            "/" +
+            `${data[1]?.name.replaceAll(" ", "%20")}`
+        );
+      } catch (e) {
+        console.log(e);
+      }
+    }
+    HandleUpload();
+  }, []);
 
   return (
     <div id={params.id}>
@@ -49,7 +54,7 @@ function Music() {
         <div className="center_high">
           <Pet />
           <div className="end">
-            <Play data={Data} sound={sound} />
+            <Play data={data} sound={sound} />
           </div>
         </div>
       </div>
