@@ -1,6 +1,8 @@
 import React from 'react';
+import { useParams } from "react-router-dom";
 
-function Playing({ active }) {
+function Playing({ active, data }) {
+  const params = useParams();
     return(
         <div className="inline">
         <div className="playing">
@@ -9,8 +11,8 @@ function Playing({ active }) {
           <div className={active ? "playing-1 animate-1" : "playing-1"}></div>
         </div>
         <div className="music-playing">
-          League of Legends - Take Over
-          <div className="album">Take Over</div>
+         {data.replace(".mp3", "").replace("%20", " ")}
+          <div className="album">{params.id}</div>
         </div>
       </div>
 )

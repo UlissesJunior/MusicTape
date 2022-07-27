@@ -3,7 +3,7 @@ import "../styles/app.css";
 import Playing from "./music-playing";
 import ButtonPlay from "./btn_play";
 
-function Button({ sound }) {
+function Button({ sound, data }) {
   const [active, setMode] = useState(false);
   const ToggleMode = () => {
     setMode(!active);
@@ -11,7 +11,7 @@ function Button({ sound }) {
   if (active === false) {
     return (
       <>
-        <Playing active={active} />
+        <Playing data={data} active={active} />
         <ButtonPlay
           ToggleMode={ToggleMode}
           className="play-button"
@@ -23,7 +23,7 @@ function Button({ sound }) {
   }
   return (
     <>
-      <Playing active={active} />
+      <Playing data={data} active={active} />
       <ButtonPlay
         ToggleMode={ToggleMode}
         className="pause-button"
@@ -34,11 +34,11 @@ function Button({ sound }) {
   );
 }
 
-function Play({ sound }) {
+function Play({ sound, data }) {
   return (
     <>
       <div className="row">
-        <Button sound={sound} />
+        <Button data={data} sound={sound} />
       </div>
     </>
   );
