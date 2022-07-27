@@ -1,5 +1,7 @@
 import "../styles/app.css";
 import { useParams } from "react-router-dom";
+import { useState } from "react";
+
 import { Howl } from "howler";
 import { supabase } from "../client/supabaseClient";
 
@@ -7,8 +9,6 @@ import Pet from "../components/tape";
 import Play from "../components/play";
 import Back from "../components/back";
 import Volume from "../components/volume";
-
-import { useState } from "react";
 
 function Music() {
   const params = useParams();
