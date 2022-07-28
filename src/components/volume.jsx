@@ -3,7 +3,7 @@ import { Howler } from "howler";
 import { useState } from "react";
 
 function Volume() {
-  const [vol, setVol] = useState(0.10);
+  const [vol, setVol] = useState(1);
   const volFixed = (vol * 100);
   const volView = volFixed.toFixed(0);
 
