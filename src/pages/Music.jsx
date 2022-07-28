@@ -49,8 +49,8 @@ function Music() {
       }
     }
     HandleUpload();
-    sound.play();
-  }, [end]);
+    sound.pause();
+  }, [end && sound.play()]);
 
   return (
     <div id={params.id}>
