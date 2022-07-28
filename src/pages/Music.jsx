@@ -14,12 +14,21 @@ function Music() {
   const params = useParams();
   const [data, setData] = useState();
   const [music, setMusic] = useState();
+  const [end, setEnd] = useState(0);
 
   const sound = new Howl({
     src: [music],
     html5: true,
     preload: true,
+    onplay: () => {
+      console.log(end)
+    },
+    onend: () => {
+      setEnd(end + 1)
+      sound.pos(end);
+    },
   });
+  
   useEffect(() => {
     async function HandleUpload() {
       try {
@@ -28,19 +37,20 @@ function Music() {
           .list(`${params.id}`, {
             limit: 25,
           });
-        setData(data[0].name);
+        setData(data[end].name);
         setMusic(
           import.meta.env.VITE_TEST_STORAGE_URL +
             `${params.id}` +
             "/" +
-            `${data[0]?.name.replaceAll(" ", "%20")}`
+            `${data[end]?.name.replaceAll(" ", "%20")}`
         );
       } catch (e) {
         console.log(e);
       }
     }
     HandleUpload();
-  }, []);
+    sound.play();
+  }, [end]);
 
   return (
     <div id={params.id}>
