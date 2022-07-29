@@ -15,20 +15,23 @@ function Music() {
   const [data, setData] = useState();
   const [music, setMusic] = useState();
   const [end, setEnd] = useState(0);
+  const [status, setStatus] = useState(true);
+  const [length, setLength] = useState("");
 
   const sound = new Howl({
     src: [music],
     html5: true,
     preload: true,
-    onplay: () => {
-      console.log(end)
-    },
+    // onplay: () => {
+    //   console.log(end);
+    // },
     onend: () => {
-      setEnd(end + 1)
+      setEnd(end + 1);
       sound.pos(end);
+      setStatus(true)
     },
   });
-  
+
   useEffect(() => {
     async function HandleUpload() {
       try {
@@ -37,6 +40,7 @@ function Music() {
           .list(`${params.id}`, {
             limit: 25,
           });
+        setLength(data.length);
         setData(data[end].name);
         setMusic(
           import.meta.env.VITE_TEST_STORAGE_URL +
@@ -50,7 +54,18 @@ function Music() {
     }
     HandleUpload();
     sound.pause();
-  }, [end && sound.play()]);
+  }, [end && status ? sound.play() : sound.pause()]);
+
+  document.body.onkeyup = function (event) {
+    if (event.keyCode == 39 && end <= length) {
+      setStatus(false);
+      setEnd(end + 1);
+    }
+    if (event.keyCode == 37 && end > 0) {
+      setStatus(true);
+      setEnd(end - 1);
+    }
+  };
 
   return (
     <div id={params.id}>

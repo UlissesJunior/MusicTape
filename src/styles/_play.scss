@@ -39,7 +39,8 @@
     color: $color1_theme1;
 }
 
-.play-button, .pause-button {
+.play-button,
+.pause-button {
     @include center();
     position: relative;
 }
@@ -70,4 +71,22 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.volume {
+    display: flex;
+    flex-direction: column;
+
+    .inline {
+        @include center();
+        margin-top: -8px;
+    }
+
+    .volume-end {
+        display: flex;
+        justify-content: end;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
 }
