@@ -125,6 +125,10 @@
           flex-direction: row;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 @-webkit-keyframes playing1 {
   0% {
     height: 24px;
@@ -580,6 +584,7 @@
 
 body {
   background-color: #9174E4;
+  cursor: default;
 }
 
 .container {

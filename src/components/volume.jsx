@@ -9,26 +9,40 @@ function Volume() {
 
   Howler.volume(vol);
 
-  document.body.onkeyup = function (e) {
-    if (e.keyCode == 38 && volView < 100) {
+  const AddVolume = () => {
+    if (volView < 100) {
       setVol(vol + 0.05);
-      console.log("a");
-    }
-    if (e.keyCode == 40 && volView > 0) {
-      setVol(vol - 0.05);
-      console.log("b");
     }
   };
 
+  const RemoveVolume = () => {
+    if (volView > 0.1) {
+      setVol(vol - 0.05);
+    }
+  };
+
+  document.body.onkeyup = function (e) {
+    if (e.keyCode == 38 && volView < 100) {
+      AddVolume();
+    }
+    if (e.keyCode == 40 && volView > 0) {
+      RemoveVolume();
+    }
+  };
+//if is playing return button
   return (
     <>
       <div className="volume">
         <div className="inline">
-          <div className="music-playing" onClick={() => setVol(vol + 0.05)}>+</div>
-          <div className="music-playing">{volView}</div>
+          <div className="music-playing pointer" onClick={AddVolume}>
+            +
+          </div>
+          <div className="music-playing">{volView?.replace("-", "")}</div>
         </div>
         <div className="volume-end">
-          <div className="music-playing" onClick={() => setVol(vol - 0.05)}>-</div>
+          <div className="music-playing pointer" onClick={RemoveVolume}>
+            -
+          </div>
         </div>
       </div>
     </>

@@ -17,13 +17,17 @@ function Music() {
   const [end, setEnd] = useState(0);
   const [status, setStatus] = useState(true);
   const [length, setLength] = useState("");
+  // const [isplaying, setIsPlaying] = useState()
 
   const sound = new Howl({
     src: [music],
     html5: true,
     preload: true,
     // onplay: () => {
-    //   console.log(end);
+
+    // },
+    // onpause: () => {
+
     // },
     onend: () => {
       setEnd(end + 1);
@@ -57,7 +61,7 @@ function Music() {
   }, [end && status ? sound.play() : sound.pause()]);
 
   document.body.onkeyup = function (event) {
-    if (event.keyCode == 39 && end <= length) {
+    if (event.keyCode == 39 && end < length) {
       setStatus(false);
       setEnd(end + 1);
     }
