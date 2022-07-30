@@ -16,8 +16,11 @@ function Volume() {
   };
 
   const RemoveVolume = () => {
-    if (volView > 0.1) {
+    if (volView > 0) {
       setVol(vol - 0.05);
+    }
+    if (volView <= 5) {
+      setVol(0)
     }
   };
 
