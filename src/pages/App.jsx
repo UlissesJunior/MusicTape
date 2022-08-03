@@ -1,4 +1,4 @@
-import "../styles/app.css";
+import "../assets/styles/app.css";
 // import "../styles/fonts/Radwave.OTF";
 import { Link } from "react-router-dom";
 

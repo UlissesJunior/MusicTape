@@ -1,4 +1,4 @@
-import "../styles/app.css";
+import "../assets/styles/app.css";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
@@ -17,6 +17,7 @@ function Music() {
   const [end, setEnd] = useState(0);
   const [status, setStatus] = useState(true);
   const [length, setLength] = useState("");
+  const [random, setRandom] = useState(false);
   // const [isplaying, setIsPlaying] = useState()
 
   const sound = new Howl({
@@ -32,7 +33,7 @@ function Music() {
     onend: () => {
       setEnd(end + 1);
       sound.pos(end);
-      setStatus(true)
+      setStatus(true);
     },
   });
 
@@ -45,13 +46,25 @@ function Music() {
             limit: 25,
           });
         setLength(data.length);
-        setData(data[end].name);
-        setMusic(
-          import.meta.env.VITE_TEST_STORAGE_URL +
-            `${params.id}` +
-            "/" +
-            `${data[end]?.name.replaceAll(" ", "%20")}`
-        );
+        if (random === true) {
+          const random = Math.floor(Math.random() * length);
+          console.log(random);
+          setData(data[random].name);
+          setMusic(
+            import.meta.env.VITE_TEST_STORAGE_URL +
+              `${params.id}` +
+              "/" +
+              `${data[random]?.name.replaceAll(" ", "%20")}`
+          );
+        } else {
+          setData(data[end].name);
+          setMusic(
+            import.meta.env.VITE_TEST_STORAGE_URL +
+              `${params.id}` +
+              "/" +
+              `${data[end]?.name.replaceAll(" ", "%20")}`
+          );
+        }
       } catch (e) {
         console.log(e);
       }

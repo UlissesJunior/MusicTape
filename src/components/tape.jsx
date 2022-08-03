@@ -1,4 +1,4 @@
-import "../styles/app.css";
+import "../assets/styles/app.css";
 
 function Pet() {
   return (

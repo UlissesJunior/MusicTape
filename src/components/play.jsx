@@ -1,5 +1,5 @@
+import "../assets/styles/app.css";
 import { useState } from "react";
-import "../styles/app.css";
 import Playing from "./music-playing";
 import ButtonPlay from "./btn_play";
 

@@ -411,11 +411,11 @@
 }
 
 #toplay .play {
-  background: url(../img/play2.png);
+  background: url(../img/play2.svg);
 }
 
 #toplay .pause {
-  background: url(../img/pause2.png);
+  background: url(../img/pause2.svg);
 }
 
 #torelax .container {
@@ -515,14 +515,14 @@
 .pause {
   width: 14px;
   height: 22px;
-  background-image: url(../img/pause.png);
+  background-image: url(../img/pause.svg);
   cursor: pointer;
 }
 
 .play {
   width: 18px;
   height: 22px;
-  background-image: url(../img/play.png);
+  background-image: url(../img/play.svg);
   cursor: pointer;
 }
 
