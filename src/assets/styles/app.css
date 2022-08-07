@@ -418,6 +418,14 @@
   background: url(../img/pause2.svg);
 }
 
+#toplay .volume-img {
+  background: url(../img/volume2.svg);
+}
+
+#toplay .volume-img:hover {
+  background: none;
+}
+
 #torelax .container {
   background: url(../img/bg_1.png);
   background-repeat: no-repeat;
@@ -536,7 +544,24 @@
           justify-content: space-between;
 }
 
+.volume-img {
+  width: 24px;
+  height: 24px;
+  margin-top: -8px;
+  background: url(../img/volume.svg);
+}
+
 .volume {
+  display: none;
+}
+
+.volume-img:hover {
+  background: none;
+  width: 84px;
+  height: 48px;
+}
+
+.volume-img:hover .volume {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,7 +571,7 @@
           flex-direction: column;
 }
 
-.volume .inline {
+.volume-img:hover .volume .inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,10 +581,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -8px;
 }
 
-.volume .volume-end {
+.volume-img:hover .volume .volume-end {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

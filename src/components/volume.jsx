@@ -20,7 +20,7 @@ function Volume() {
       setVol(vol - 0.05);
     }
     if (volView <= 5) {
-      setVol(0)
+      setVol(0);
     }
   };
 
@@ -32,21 +32,23 @@ function Volume() {
       RemoveVolume();
     }
   };
-//if is playing return button
+  //if is playing return button
   return (
     <>
-      <div className="volume">
-        <div className="inline">
-          <div className="music-playing pointer" onClick={AddVolume}>
-            +
+      <div className="volume-img">
+        <div className="volume">
+          <div className="inline">
+            <div className="music-playing pointer" onClick={AddVolume}>
+              +
+            </div>
+            <div className="music-playing">{volView?.replace("-", "")}</div>
           </div>
-          <div className="music-playing">{volView?.replace("-", "")}</div>
-        </div>
-        <div className="volume-end">
-          <div className="music-playing pointer" onClick={RemoveVolume}>
-            -
+          <div className="volume-end">
+            <div className="music-playing pointer" onClick={RemoveVolume}>
+              -
+            </div>
           </div>
-        </div>
+        </div>{" "}
       </div>
     </>
   );

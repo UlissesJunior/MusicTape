@@ -73,20 +73,36 @@
     justify-content: space-between;
 }
 
+.volume-img {
+    width: 24px;
+    height: 24px;
+    margin-top: -8px;
+    background: url(../img/volume.svg);
+}
+
 .volume {
-    display: flex;
-    flex-direction: column;
+    display: none;
+}
 
-    .inline {
-        @include center();
-        margin-top: -8px;
-    }
+.volume-img:hover {
+    background: none;
+    width: 84px;
+    height: 48px;
 
-    .volume-end {
+    .volume {
         display: flex;
-        justify-content: end;
-        flex-direction: column-reverse;
-        align-items: flex-end;
-    }
+        flex-direction: column;
 
+        .inline {
+            @include center();
+        }
+
+        .volume-end {
+            display: flex;
+            justify-content: end;
+            flex-direction: column-reverse;
+            align-items: flex-end;
+        }
+
+    }
 }
