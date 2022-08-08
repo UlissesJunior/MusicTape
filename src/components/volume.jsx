@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function Volume() {
   const [vol, setVol] = useState(1);
+  const [mute, setMute] = useState(false);
   const volFixed = vol * 100;
   const volView = volFixed.toFixed(0);
 
@@ -12,6 +13,7 @@ function Volume() {
   const AddVolume = () => {
     if (volView < 100) {
       setVol(vol + 0.05);
+      setMute(false)
     }
   };
 
@@ -21,6 +23,7 @@ function Volume() {
     }
     if (volView <= 5) {
       setVol(0);
+      setMute(true);
     }
   };
 
@@ -35,7 +38,7 @@ function Volume() {
   //if is playing return button
   return (
     <>
-      <div className="volume-img">
+      <div className={mute ? "mute-img" : "volume-img"}>
         <div className="volume">
           <div className="inline">
             <div className="music-playing pointer" onClick={AddVolume}>

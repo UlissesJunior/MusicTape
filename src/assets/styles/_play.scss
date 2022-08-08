@@ -73,20 +73,28 @@
     justify-content: space-between;
 }
 
-.volume-img {
+.volume-img, .mute-img {
     width: 24px;
     height: 24px;
     margin-top: -8px;
     background: url(../img/volume.svg);
 }
 
+.volume-img {
+    background: url(../img/volume.svg);
+}
+
+.mute-img {
+    background: url(../img/mute.svg);
+}
+
 .volume {
     display: none;
 }
 
-.volume-img:hover {
+.volume-img:hover, .mute-img:hover {
     background: none;
-    width: 84px;
+    width: 64px;
     height: 48px;
 
     .volume {

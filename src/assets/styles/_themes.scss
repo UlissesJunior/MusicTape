@@ -53,14 +53,14 @@
     }
 
     .music-playing {
-        color: rgba(255, 255, 255, 0.8);
+        color: #fff;
     }
 
     .playing-1,
     .playing-2,
     .arrow::after,
     .arrow::before {
-        background-color: rgba(255, 255, 255, 1); //0.8
+        background-color: #fff; //0.8
     }
     
     .playing {
@@ -79,7 +79,11 @@
         background: url(../img/volume2.svg);
     }
 
-    .volume-img:hover {
+    .mute-img {
+        background: url(../img/mute2.svg);
+    }
+
+    .volume-img:hover, .mute-img:hover {
         background: none
     }
 
