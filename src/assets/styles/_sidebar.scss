@@ -1,0 +1,75 @@
+.flex-side {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 12vw;
+    max-width: 80px;
+    border-left: 2px solid $color1_theme1;
+
+    .playlists {
+        display: none;
+    }
+}
+
+.sidebar-active {
+    position: absolute;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: $bg_home;
+    z-index: 2;
+    @include center();
+    text-align: center;
+}
+
+.hamburguer {
+    position: absolute;
+    margin-top: 4vh;
+    right: 2vmin;
+    width: 32px;
+    height: 6px;
+    background-color: $color1_theme1;
+}
+
+.hamburguer::before,
+.hamburguer::after {
+    right: 0;
+    width: 40px;
+    height: 6px;
+    position: absolute;
+    content: "";
+    background-color: $color1_theme1;
+}
+
+.hamburguer::before {
+    top: -12px;
+    transition: 0.5s;
+}
+
+.hamburguer.active::before {
+    top: 0;
+    transform: rotate(-45deg);
+    background-color: $color1_theme1;
+    z-index: 3;
+    border-radius: 4px;
+}
+
+.hamburguer::after {
+    top: 12px;
+    transition: 0.5s;
+}
+
+.hamburguer.active {
+    background: none;
+    top: 0;
+}
+
+.hamburguer.active::after {
+    top: 0;
+    transform: rotate(45deg);
+    border-radius: 4px;
+    background-color: $color1_theme1;
+    z-index: 3;
+}

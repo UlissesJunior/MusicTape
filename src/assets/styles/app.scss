@@ -4,6 +4,7 @@
 @import "tape";
 @import "themes";
 @import "play";
+@import "sidebar";
 
 * {
     padding: 0;
@@ -26,6 +27,7 @@ body {
 
 .container-max {
     max-width: 1440px;
+    width: 80vw;
     margin: auto;
     padding: 0 4vmin;
 }
@@ -44,7 +46,6 @@ h1, h2 {
 
 h1 {
     color: $color1_theme1;
-    margin-top: 20vmin;
 }
 
 h2 {
