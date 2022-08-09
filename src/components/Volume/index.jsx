@@ -1,4 +1,4 @@
-import "../assets/styles/app.css";
+import "../../assets/styles/app.css";
 import { Howler } from "howler";
 import { useState } from "react";
 

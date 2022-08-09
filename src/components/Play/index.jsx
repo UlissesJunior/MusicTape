@@ -1,6 +1,6 @@
-import "../assets/styles/app.css";
+import "../../assets/styles/app.css";
 import { useState } from "react";
-import Playing from "./music-playing";
+import Playing from "../MusicPlaying";
 import ButtonPlay from "./btn_play";
 
 function Button({ sound, data }) {

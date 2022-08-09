@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import { Howl } from "howler";
 import { supabase } from "../client/supabaseClient";
 
-import Pet from "../components/tape";
-import Play from "../components/play";
-import Back from "../components/back";
-import Volume from "../components/volume";
+import MusicTape from "../components/MusicTape";
+import Play from "../components/Play";
+import Back from "../components/Back";
+import Volume from "../components/Volume";
 
 function Music() {
   const params = useParams();
@@ -94,7 +94,7 @@ function Music() {
           <Volume />
         </div>
         <div className="center_high">
-          <Pet />
+          <MusicTape />
           <div className="end">
             <Play data={data} sound={sound} />
           </div>

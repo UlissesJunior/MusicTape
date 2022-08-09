@@ -1,6 +1,6 @@
-import "../assets/styles/app.css";
+import "../../assets/styles/app.css";
 
-function Pet() {
+function MusicTape() {
   return (
     <div className="box">
       <div className="center_low">
@@ -34,4 +34,4 @@ function Pet() {
   );
 }
 
-export default Pet;
+export default MusicTape;
