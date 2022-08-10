@@ -5,7 +5,7 @@
 
 .sidebar {
     height: 100vh;
-    width: 12vw;
+    width: 100%;
     max-width: 80px;
     border-left: 2px solid $color1_theme1;
 
@@ -22,12 +22,22 @@
     z-index: 2;
     @include center();
     text-align: center;
+
+    .click-zone {
+        width: 0;
+        height: 0;
+    }
+}
+
+.click-zone {
+    width: 100%;
+    height: 60px;
 }
 
 .hamburguer {
     position: absolute;
-    margin-top: 4vh;
-    right: 2vmin;
+    margin-top: clamp(4vmin, 40px, 4vh);
+    right: calc(80px - 32px*2);
     width: 32px;
     height: 6px;
     background-color: $color1_theme1;
@@ -72,4 +82,22 @@
     border-radius: 4px;
     background-color: $color1_theme1;
     z-index: 3;
+}
+
+@media (max-width:500px) {
+    .sidebar {
+        width: 60px
+    }
+
+    .hamburguer {
+        width: 24px;
+        right: calc(60px - 24px*2);
+    }
+
+    .hamburguer::before,
+    .hamburguer::after {
+        width: 32px;
+    }
+
+    
 }

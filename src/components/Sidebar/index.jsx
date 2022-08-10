@@ -30,26 +30,24 @@ function Sidebar() {
   return (
     <>
       <div className={open ? "sidebar" : "sidebar-active"}>
-             <div className={open ? "" : "sidebar-line"}>
-        <div
-          onClick={Toogle}
-          className={open ? "hamburguer" : "hamburguer active"}
-        ></div>
-        <div className="playlists">
-          <ul>
-            {data?.map((music) => {
-              return (
-                <>
-                  {" "}
-                  <Link to={music.name}>
-                    <h2 key={music.id}>{music.name}</h2>
-                  </Link>
-                </>
-              );
-            })}
-          </ul>
+        <div className={open ? "" : "sidebar-line"}>
+          <div onClick={Toogle} className="click-zone">
+            <div className={open ? "hamburguer" : "hamburguer active"}></div>
+          </div>
+          <div className="playlists">
+            <ul>
+              {data?.map((music) => {
+                return (
+                  <>
+                    <Link to={music.name}>
+                      <h2 key={music.id}>{music.name}</h2>
+                    </Link>
+                  </>
+                );
+              })}
+            </ul>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );

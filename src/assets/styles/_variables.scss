@@ -36,3 +36,16 @@ $shadow-in-out: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px 
     src: url(../styles/fonts/Radwave.otf), url("/src/styles/fonts/Radwave.otf") format("otf");
     font-display: swap;
 }
+
+//Scroll
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg_home;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color1_theme1;
+}
