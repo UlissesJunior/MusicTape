@@ -467,6 +467,64 @@
   background-color: #6BF29A;
 }
 
+#togalaxy .container {
+  background: url(../img/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg_galaxy.png);
+}
+
+#togalaxy .container .music-playing, #togalaxy .container .playing {
+  color: #fff;
+}
+
+#togalaxy .container .playing-1,
+#togalaxy .container .playing-2,
+#togalaxy .container .arrow::after,
+#togalaxy .container .arrow::before {
+  background-color: #fff;
+}
+
+#togalaxy .container .play {
+  background: url(../img/play2.svg);
+}
+
+#togalaxy .container .pause {
+  background: url(../img/pause2.svg);
+}
+
+#togalaxy .container .volume-img {
+  background: url(../img/volume2.svg);
+}
+
+#togalaxy .container .mute-img {
+  background: url(../img/mute2.svg);
+}
+
+#togalaxy .container .volume-img:hover, #togalaxy .container .mute-img:hover {
+  background: none;
+}
+
+#togalaxy .container .line1, #togalaxy .container .line2, #togalaxy .container .line3 {
+  display: none;
+}
+
+#togalaxy .container .tape-title {
+  background: url(../img/tape_galaxy.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#togalaxy .container .tape-view {
+  background-color: #F5EFFD;
+}
+
+#togalaxy .container .tape-music-in {
+  background-color: #1D1B38;
+}
+
 .playing {
   position: relative;
   display: -webkit-box;
@@ -637,7 +695,7 @@
   height: 100vh;
   width: 100%;
   max-width: 80px;
-  border-left: 2px solid #3231F1;
+  border-left: 1px solid #3231F1;
 }
 
 .sidebar .playlists {

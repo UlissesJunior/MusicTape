@@ -114,3 +114,61 @@
     }
 
 }
+
+#togalaxy {
+    .container {
+        @include background();
+        background-image: $bg_img_galaxy;
+
+        .music-playing, .playing {
+            color: #fff;
+        }
+    
+        .playing-1,
+        .playing-2,
+        .arrow::after,
+        .arrow::before {
+            background-color: #fff; //0.8
+        }
+
+        .play {
+            background: url(../img/play2.svg);
+        }
+    
+        .pause {
+            background: url(../img/pause2.svg);
+        }
+    
+        .volume-img {
+            background: url(../img/volume2.svg);
+        }
+    
+        .mute-img {
+            background: url(../img/mute2.svg);
+        }
+
+        .volume-img:hover, .mute-img:hover {
+            background: none
+        }
+        
+        .line1, .line2, .line3 {
+            display: none;
+        }
+
+        .tape-title {
+            background: $bg_tape_galaxy;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tape-view {
+            background-color: #F5EFFD;
+        }
+
+        .tape-music-in {
+            background-color: $color1_theme_galaxy;
+        }
+        
+    }
+}
