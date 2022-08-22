@@ -77,10 +77,12 @@ function Music() {
     if (event.keyCode == 39 && end < length) {
       setStatus(false);
       setEnd(end + 1);
+      sound.stop();
     }
     if (event.keyCode == 37 && end > 0) {
       setStatus(true);
       setEnd(end - 1);
+      sound.stop();
     }
   };
 

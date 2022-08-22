@@ -44,6 +44,13 @@ h1, h2 {
     font-size: 12.5vmin;
 }
 
+@media (max-width: 1000px) {
+    h1, h2 {
+        font-size: 11vmin;
+    }
+}
+
+
 h1 {
     color: $color1_theme1;
 }

@@ -472,7 +472,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url(../img/bg_galaxy.png);
+  background-image: url(../img/bg_galaxy2.jpg);
 }
 
 #togalaxy .container .music-playing, #togalaxy .container .playing {
@@ -840,6 +840,12 @@ a {
 
 h1, h2 {
   font-size: 12.5vmin;
+}
+
+@media (max-width: 1000px) {
+  h1, h2 {
+    font-size: 11vmin;
+  }
 }
 
 h1 {
