@@ -1,27 +1,109 @@
-﻿# MusicTape
+﻿<h1 align="center">
+📼<br>Music Tape
+</h1>
 
 <p align="center">
-<img src="src/assets/img/readme/banner.png">
+<img src="https://github.com/UlissesJunior/MusicTape/blob/main/src/assets/img/readme/banner.png">
 <p>
 
-## Themes
+<h4 align="center"><a href="https://musictape.vercel.app/">Clique para visitar o projeto</a></h4>
 
-### To Play
+---
 
-<p align="center">
-<img src="src/assets/img/readme/toplay.png">
-<p>
+<h2>Tecnologias utilizadas</h2>
 
-### To Study
+Para o desenvolvimento deste aplicativo, utilizei as seguintes tecnologias:
 
-<p align="center">
-<img src="src/assets/img/readme/tostudy.png">
-<p>
+- Vite;
 
-### To Relax
+- React.js (React Router);
 
-<p align="center">
-<img src="src/assets/img/readme/torelax.png">
-<p>
+- SCSS;
 
- ![visitors](https://visitor-badge.glitch.me/badge?page_id=UlissesJunior/MusicTape&right_color=red)
+- Supabase;
+
+---
+
+<h2>Temas</h2>
+
+O site atual conta com os seguintes temas:
+
+<h3>To Play</h3>
+<p>Um tema feito com músicas para uma gameplay de qualidade  🎮 </p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/toplay.png">
+
+<h3>To Study</h3>
+<p>Um tema feito com músicas para um estudo tranquilo e sem distrações 📚 </p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/tostudy.png">
+
+<h3>To Relax</h3>
+<p>Um tema feito com músicas para relaxar e esquecer das preocupações diárias 🍃</p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/torelax.png">
+
+<h3>To Galaxy</h3>
+<p>Um tema especialmente para os fãs da Marvel, feito com as músicas do Awesome Mix Vol. 1 (Tema de Guardiões da Galáxia 1 - A famosa fita do Peter Quill)</p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/togalaxy.png">
+
+---
+
+<h2>Comandos</h2>
+
+<h3>↑ - Aumentar Volume</h3>  
+<h3>↓ - Diminuir Volume</h3>
+<h3>→ - Pular Música</h3> 
+<h3>← - Voltar Música</h3> 
+
+---
+
+---
+
+<h2>Objetivo</h2>
+
+Meu objetivo com esse aplicativo é torná-lo open-source. Portanto vou deixar o passo a passo para contribuição:
+<br/>
+
+- Dê um fork no projeto
+- Altere apenas o arquivo <a href="https://github.com/UlissesJunior/MusicTape/blob/main/src/assets/styles/_themes.scss">_themes.scss</a> com as alterações do seu novo tema. Você pode se localizar pelo arquivo de estilização da tape para fazer suas alterações <a href="https://github.com/UlissesJunior/MusicTape/blob/main/src/assets/styles/_tape.scss">_tape.scss</a> 
+- Se você utilizar de uma imagem local para o background do seu tema, coloque ela em um prefetch no arquivo <a href="https://github.com/UlissesJunior/MusicTape/blob/main/index.html">index.html</a> 
+- Envie um pull request para a branch main documentando suas alterações e com o seu email para contato. 
+- Após a minha aprovação, vou te enviar um client para upar a música no banco de dados do projeto.
+
+<br/>Estou muito animado com esse projeto, participem galera! 😉
+
+---
+
+---
+
+<h2>License ⚖️</h2>
+
+Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https://github.com/UlissesJunior/MusicTape/blob/main/LICENSE">LICENSE</a>
+
+---
+
+<h2>Autor</h2>
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<a href="https://github.com/UlissesJunior">
+
+<img src="https://avatars.githubusercontent.com/u/80963163?v=4" width="120px;" alt="Ulisses Junior"/><br>
+
+<sub>
+
+<b>Ulisses Junior</b>
+
+</sub>
+
+</a>
+
+</td>
+
+</tr>
+
+</table>
+
+![visitors](https://visitor-badge.glitch.me/badge?page_id=UlissesJunior/MusicTape&right_color=red)
