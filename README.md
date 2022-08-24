@@ -111,4 +111,30 @@ Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https:
 
 </table>
 
+<h2>Contribuidores</h2>
+
+<table>
+
+<tr>
+
+<td align="center">
+
+<a href="https://github.com/EvertonWingert">
+
+<img src="https://avatars.githubusercontent.com/u/54149497?v=4" width="120px;" alt="Everton"/><br>
+
+<sub>
+
+<b>Everton Wingert</b>
+
+</sub>
+
+</a>
+
+</td>
+
+</tr>
+
+</table>
+
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=UlissesJunior/MusicTape&right_color=red)
