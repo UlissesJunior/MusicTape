@@ -138,5 +138,3 @@ Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https:
 </table>
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=UlissesJunior/MusicTape&right_color=red)
-
-//https://contrib.rocks/image?repo=UlissesJunior/MusicTape
