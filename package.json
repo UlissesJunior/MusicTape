@@ -12,7 +12,9 @@
     "@supabase/supabase-js": "^1.35.4",
     "howler": "^2.2.3",
     "react": "^18.0.0",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18.0.0",
+    "react-external-link": "^2.0.0",
     "react-router-dom": "^6.3.0",
     "react-string-replace": "^1.1.0"
   },

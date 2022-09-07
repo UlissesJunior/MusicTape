@@ -98,7 +98,7 @@ function Music() {
         <div className="center_high">
           <MusicTape />
           <div className="end">
-            <Play data={data} sound={sound} />
+            <Play end={end} data={data} sound={sound} />
           </div>
         </div>
       </div>

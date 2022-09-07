@@ -84,6 +84,26 @@
     z-index: 3;
 }
 
+.star {
+    position: absolute;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    bottom: clamp(4vmin, 40px, 4vh);
+    right: calc(80px - 28px*2);
+    background: url(../img/star.svg);
+}
+
+.star:hover {
+    animation: spin-star .6s;
+}
+
+.confetti {
+    position: absolute;
+    width: 80px;
+    bottom: 120px;
+}
+
 @media (max-width:500px) {
     .sidebar {
         width: 60px
@@ -94,9 +114,22 @@
         right: calc(60px - 24px*2);
     }
 
+    .confetti {
+        position: absolute;
+        width: 60px;
+        bottom: 120px;
+    }
+
+    .star {
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        right: calc(60px - 22px*2);
+    }
+
     .hamburguer::before,
     .hamburguer::after {
         width: 32px;
     }
-    
+
 }

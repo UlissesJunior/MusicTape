@@ -75,6 +75,14 @@
         background: url(../img/pause2.svg);
     }
 
+    .next {
+        background: url(../img/next2.svg);
+    }
+
+    .back {
+        background: url(../img/back2.svg);
+    }
+
     .volume-img {
         background: url(../img/volume2.svg);
     }
@@ -138,7 +146,15 @@
         .pause {
             background: url(../img/pause2.svg);
         }
+
+        .next {
+            background: url(../img/next2.svg);
+        }
     
+        .back {
+            background: url(../img/back2.svg);
+        }
+
         .volume-img {
             background: url(../img/volume2.svg);
         }

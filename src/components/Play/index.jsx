@@ -3,7 +3,7 @@ import { useState } from "react";
 import Playing from "../MusicPlaying";
 import ButtonPlay from "./btn_play";
 
-function Button({ sound, data }) {
+function Button({ sound, data, end, setEnd }) {
   const [active, setMode] = useState(false);
   const ToggleMode = () => {
     setMode(!active);
@@ -12,12 +12,27 @@ function Button({ sound, data }) {
     return (
       <>
         <Playing data={data} active={active} />
-        <ButtonPlay
-          ToggleMode={ToggleMode}
-          className="play-button"
-          classNameIcon="play"
-          soundFunc={() => sound.play()}
-        />
+        {/* <div className="row-play"> */}
+          {/* <ButtonPlay
+            className="back-button"
+            classNameIcon="back"
+            soundFunc={() => {
+              end = end - 1;
+            }}
+          />
+          <ButtonPlay
+            className="skip-button"
+            classNameIcon="next"
+            soundFunc={() => {
+              end = end + 1;
+            }}
+          /> */}
+          <ButtonPlay
+            className="play-button"
+            classNameIcon="play"
+            soundFunc={() => sound.play()}
+          />
+        {/* </div> */}
       </>
     );
   }
@@ -34,7 +49,7 @@ function Button({ sound, data }) {
   );
 }
 
-function Play({ sound, data }) {
+function Play({ sound, data, end }) {
   return (
     <>
       <div className="row">

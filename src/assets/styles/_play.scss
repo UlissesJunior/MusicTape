@@ -40,10 +40,19 @@
 }
 
 .play-button,
-.pause-button {
+.pause-button,
+.back-button,
+.skip-button {
     @include center();
     position: relative;
 }
+
+// .row-play {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     height: 120px;
+// }
 
 .pause-button {
     width: 18px;
@@ -67,13 +76,28 @@
     cursor: pointer;
 }
 
+.back {
+    width: 18px;
+    height: 22px;
+    background-image: url(../img/back.svg);
+    cursor: pointer;
+}
+
+.next {
+    width: 18px;
+    height: 22px;
+    background-image: url(../img/next.svg);
+    cursor: pointer;
+}
+
 .row {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.volume-img, .mute-img {
+.volume-img,
+.mute-img {
     width: 24px;
     height: 24px;
     margin-top: -8px;
@@ -92,7 +116,8 @@
     display: none;
 }
 
-.volume-img:hover, .mute-img:hover {
+.volume-img:hover,
+.mute-img:hover {
     background: none;
     width: 64px;
     height: 48px;
