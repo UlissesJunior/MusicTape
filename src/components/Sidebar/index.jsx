@@ -15,7 +15,7 @@ function Sidebar() {
   };
 
   const ConfettiToogle = () => {
-    setStar(!star);
+    setStar(true);
   };
 
   widthc = 80;
