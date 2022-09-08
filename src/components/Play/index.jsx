@@ -28,6 +28,7 @@ function Button({ sound, data, end, setEnd }) {
             }}
           /> */}
           <ButtonPlay
+          ToggleMode={ToggleMode}
             className="play-button"
             classNameIcon="play"
             soundFunc={() => sound.play()}
