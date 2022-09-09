@@ -63,7 +63,7 @@ function Sidebar() {
             <div className={open ? "confetti" : "none"}>
               <Confetti
                 width={widthc}
-                height={110}
+                height={120}
                 numberOfPieces={32}
                 gravity={0.2}
                 colors={["#3231F1", "#fff"]}

@@ -1,14 +1,18 @@
 import "../assets/styles/app.css";
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
 
 import { Howl } from "howler";
 import { supabase } from "../client/supabaseClient";
 
 import MusicTape from "../components/MusicTape";
+useContext;
 import Play from "../components/Play";
 import Back from "../components/Back";
 import Volume from "../components/Volume";
+import { createContext } from "react";
+
+const Context = createContext();
 
 function Music() {
   const params = useParams();
@@ -73,36 +77,46 @@ function Music() {
     sound.pause();
   }, [end && status ? sound.play() : sound.pause()]);
 
+  const back = () => {
+    setStatus(true);
+    setEnd(end - 1);
+    sound.stop();
+  };
+
+  const next = () => {
+    setStatus(true);
+    setEnd(end + 1);
+    sound.stop();
+  };
+
   document.body.onkeyup = function (event) {
     if (event.keyCode == 39 && end < length) {
-      setStatus(false);
-      setEnd(end + 1);
-      sound.stop();
+      next();
     }
     if (event.keyCode == 37 && end > 0) {
-      setStatus(true);
-      setEnd(end - 1);
-      sound.stop();
+      back();
     }
   };
 
   return (
-    <div id={params.id}>
-      <div className="container">
-        <div className="start">
-          <Back sound={sound} />
-        </div>
-        <div className="end-top">
-          <Volume />
-        </div>
-        <div className="center_high">
-          <MusicTape />
-          <div className="end">
-            <Play end={end} data={data} sound={sound} />
+    <Context.Provider value={{ next }}>
+      <div id={params.id}>
+        <div className="container">
+          <div className="start">
+            <Back sound={sound} />
+          </div>
+          <div className="end-top">
+            <Volume />
+          </div>
+          <div className="center_high">
+            <MusicTape />
+            <div className="end">
+              <Play data={data} sound={sound} />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Context.Provider>
   );
 }
 

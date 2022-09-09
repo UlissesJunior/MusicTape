@@ -44,6 +44,10 @@ O site atual conta com os seguintes temas:
 <p>Um tema especialmente para os fãs da Marvel, feito com as músicas do Awesome Mix Vol. 1 (Tema de Guardiões da Galáxia 1 - A famosa fita do Peter Quill)</p>
 <img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/togalaxy.png">
 
+<h3>To Grunge</h3>
+<p>Um tema feito com músicas do subgênero do rock alternativo, o grunge 🎸 </p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/togrunge.png">
+
 ---
 
 <h2>Comandos</h2>

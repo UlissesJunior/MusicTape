@@ -6,6 +6,8 @@ function MusicTape() {
       <div className="center_low">
         <div className="tape-reels center_low">
           <div className="tape-title">
+            <div className="logo-left"></div>
+            <div className="logo-right"></div>
             <div className="lines">
               <div className="line1"></div>
               <div className="line2"></div>

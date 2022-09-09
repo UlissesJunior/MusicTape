@@ -47,21 +47,33 @@
     position: relative;
 }
 
-// .row-play {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: space-between;
-//     height: 120px;
-// }
+.row-play {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
 .pause-button {
     width: 18px;
 }
 
+.back-button {
+    position: absolute;
+    top: -60px;
+}
+
+.next-button {
+    margin-top: -30px;
+}
+
+.play-button {
+    margin-top: 28px;
+}
+
 .pause {
     width: 14px;
     height: 22px;
-    background-image: url(../img/pause.svg);
+    background-image: url(../img/icons/pause.svg);
     cursor: pointer;
 }
 
@@ -72,21 +84,21 @@
     // height: 2.4vmin;
     width: 18px;
     height: 22px;
-    background-image: url(../img/play.svg);
+    background-image: url(../img/icons/play.svg);
     cursor: pointer;
 }
 
 .back {
     width: 18px;
     height: 22px;
-    background-image: url(../img/back.svg);
+    background-image: url(../img/icons/back.svg);
     cursor: pointer;
 }
 
 .next {
     width: 18px;
     height: 22px;
-    background-image: url(../img/next.svg);
+    background-image: url(../img/icons/next.svg);
     cursor: pointer;
 }
 
@@ -101,15 +113,15 @@
     width: 24px;
     height: 24px;
     margin-top: -8px;
-    background: url(../img/volume.svg);
+    background: url(../img/icons/volume.svg);
 }
 
 .volume-img {
-    background: url(../img/volume.svg);
+    background: url(../img/icons/volume.svg);
 }
 
 .mute-img {
-    background: url(../img/mute.svg);
+    background: url(../img/icons/mute.svg);
 }
 
 .volume {

@@ -34,6 +34,22 @@
     flex-direction: column;
 }
 
+.logo-left {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    left: 40px;
+}
+
+.logo-right {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 20px;
+    right: 40px;
+}
+
 .lines {
     position: relative;
     width: 100%;
