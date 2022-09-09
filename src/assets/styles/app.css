@@ -975,7 +975,7 @@
   height: 32px;
   bottom: clamp(4vmin, 40px, 4vh);
   right: calc(80px - 28px*2);
-  background: url(../img/star.svg);
+  background: url(../img/icons/star.svg);
 }
 
 .star:hover {
