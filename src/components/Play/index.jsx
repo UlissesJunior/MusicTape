@@ -2,14 +2,15 @@ import "../../assets/styles/app.css";
 import { useState } from "react";
 import Playing from "../MusicPlaying";
 import ButtonPlay from "./btn_play";
+import { useContext } from "react";
+import { UserContext } from "../../hooks/UserContext";
 
-
-function Button({ sound, data}) {
+function Button({ sound, data }) {
+  const { back, next } = useContext(UserContext);
   const [active, setMode] = useState(false);
   const ToggleMode = () => {
     setMode(!active);
   };
-
 
   if (active === false) {
     return (
@@ -19,15 +20,15 @@ function Button({ sound, data}) {
           <ButtonPlay
             className="back-button"
             classNameIcon="back"
-            // soundFunc={back}
+            soundFunc={back}
           />
           <ButtonPlay
             className="next-button"
             classNameIcon="next"
-            // soundFunc={next}
+            soundFunc={next}
           />
           <ButtonPlay
-          ToggleMode={ToggleMode}
+            ToggleMode={ToggleMode}
             className="play-button"
             classNameIcon="play"
             soundFunc={() => sound.play()}
@@ -50,7 +51,6 @@ function Button({ sound, data}) {
 }
 
 function Play({ sound, data }) {
-
   return (
     <>
       <div className="row">

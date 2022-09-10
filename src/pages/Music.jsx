@@ -6,13 +6,12 @@ import { Howl } from "howler";
 import { supabase } from "../client/supabaseClient";
 
 import MusicTape from "../components/MusicTape";
-useContext;
+
 import Play from "../components/Play";
 import Back from "../components/Back";
 import Volume from "../components/Volume";
-import { createContext } from "react";
 
-const Context = createContext();
+import { UserContext } from "../hooks/UserContext";
 
 function Music() {
   const params = useParams();
@@ -75,7 +74,7 @@ function Music() {
     }
     HandleUpload();
     sound.pause();
-  }, [end && status ? sound.play() : sound.pause()]);
+  }, [end]);
 
   const back = () => {
     setStatus(true);
@@ -99,24 +98,24 @@ function Music() {
   };
 
   return (
-    <Context.Provider value={{ next }}>
-      <div id={params.id}>
-        <div className="container">
-          <div className="start">
-            <Back sound={sound} />
-          </div>
-          <div className="end-top">
-            <Volume />
-          </div>
-          <div className="center_high">
-            <MusicTape />
-            <div className="end">
+    <div id={params.id}>
+      <div className="container">
+        <div className="start">
+          <Back sound={sound} />
+        </div>
+        <div className="end-top">
+          <Volume />
+        </div>
+        <div className="center_high">
+          <MusicTape />
+          <div className="end">
+            <UserContext.Provider value={{ back, next }}>
               <Play data={data} sound={sound} />
-            </div>
+            </UserContext.Provider>
           </div>
         </div>
       </div>
-    </Context.Provider>
+    </div>
   );
 }
 
