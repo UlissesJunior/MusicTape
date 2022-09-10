@@ -225,18 +225,24 @@
     // }
 
     .logo-left {
-        background-size: cover;
+        img {
+            max-width: 40px;
+            width: 4vmin;
+            max-height: 40px;
+            height: 4vmin;
+        }
         background: url(../img/icons/icon_togrunge.png);
     }
 
-    .logo-right {
-        color: #0a0a0a;
-        width: 176px;
-    }
+    // .logo-right {
+    //     color: #0a0a0a;
+    //     width: 176px;
+    // }
 
-    .logo-right::after {
-        content: "Grunge is Dead!";
-    }
+    // .logo-right::after {
+    //     content: "Grunge is Dead!";
+    //     font-size: 0.6rem;
+    // }
 
     .music-playing,
     .playing {

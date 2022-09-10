@@ -74,16 +74,16 @@ function Music() {
     }
     HandleUpload();
     sound.pause();
-  }, [end]);
+  }, [end && status ? sound.play() : sound.pause()]);
 
   const back = () => {
-    setStatus(true);
+    setStatus(false);
     setEnd(end - 1);
     sound.stop();
   };
 
   const next = () => {
-    setStatus(true);
+    setStatus(false);
     setEnd(end + 1);
     sound.stop();
   };

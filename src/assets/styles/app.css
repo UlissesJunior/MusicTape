@@ -273,8 +273,8 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  top: 20px;
-  left: 40px;
+  top: 2vmin;
+  left: 4vmin;
 }
 
 .logo-right {
@@ -610,17 +610,14 @@
 }
 
 #togrunge .logo-left {
-  background-size: cover;
   background: url(../img/icons/icon_togrunge.png);
 }
 
-#togrunge .logo-right {
-  color: #0a0a0a;
-  width: 176px;
-}
-
-#togrunge .logo-right::after {
-  content: "Grunge is Dead!";
+#togrunge .logo-left img {
+  max-width: 40px;
+  width: 4vmin;
+  max-height: 40px;
+  height: 4vmin;
 }
 
 #togrunge .music-playing,
