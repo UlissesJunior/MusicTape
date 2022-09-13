@@ -1,5 +1,4 @@
 import "../assets/styles/app.css";
-// import "../styles/fonts/Radwave.OTF";
 import { Link } from "react-router-dom";
 import Sidebar from "../components/Sidebar";
 
