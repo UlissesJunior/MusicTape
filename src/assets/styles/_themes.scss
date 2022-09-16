@@ -1,13 +1,104 @@
-//Tema To Play
+//Funções
+@mixin icon-white {
+    .music-playing {
+        color: #fff;
+    }
+
+    .playing-1,
+    .playing-2,
+    .arrow::after,
+    .arrow::before {
+        background-color: #fff; //0.8
+    }
+
+    .playing {
+        color: #fff;
+    }
+
+    .play {
+        background: url(../img/icons/play2.svg);
+    }
+
+    .pause {
+        background: url(../img/icons/pause2.svg);
+    }
+
+    .next {
+        background: url(../img/icons/next2.svg);
+    }
+
+    .back {
+        background: url(../img/icons/back2.svg);
+    }
+
+    .volume-img {
+        background: url(../img/icons/volume2.svg);
+    }
+
+    .mute-img {
+        background: url(../img/icons/mute2.svg);
+    }
+
+    .volume-img:hover,
+    .mute-img:hover {
+        background: none
+    }
+}
+
+@mixin icon-black {
+
+    .music-playing,
+    .playing {
+        color: #0a0a0a;
+    }
+
+    .playing-1,
+    .playing-2,
+    .arrow::after,
+    .arrow::before {
+        background-color: #0a0a0a;
+    }
+
+    .play {
+        background: url(../img/icons/play3.svg);
+    }
+
+    .pause {
+        background: url(../img/icons/pause3.svg);
+    }
+
+    .next {
+        background: url(../img/icons/next3.svg);
+    }
+
+    .back {
+        background: url(../img/icons/back3.svg);
+    }
+
+    .volume-img {
+        background: url(../img/icons/volume3.svg);
+    }
+
+    .mute-img {
+        background: url(../img/icons/mute3.svg);
+    }
+
+    .volume-img:hover,
+    .mute-img:hover {
+        background: none
+    }
+}
+
+//Temas
+
+//To Play
 #toplay {
+    @include icon-white();
+
     .container {
         @include background();
         background-image: $bg_img_2;
     }
-
-    // .line1, .line2, .arrow::before, .arrow::after {
-    //     @include loading();
-    // }
 
     .tape-title,
     .tape-music-in,
@@ -52,53 +143,9 @@
         display: none;
     }
 
-    .music-playing {
-        color: #fff;
-    }
-
-    .playing-1,
-    .playing-2,
-    .arrow::after,
-    .arrow::before {
-        background-color: #fff; //0.8
-    }
-
-    .playing {
-        color: #fff;
-    }
-
-    .play {
-        background: url(../img/icons/play2.svg);
-    }
-
-    .pause {
-        background: url(../img/icons/pause2.svg);
-    }
-
-    .next {
-        background: url(../img/icons/next2.svg);
-    }
-
-    .back {
-        background: url(../img/icons/back2.svg);
-    }
-
-    .volume-img {
-        background: url(../img/icons/volume2.svg);
-    }
-
-    .mute-img {
-        background: url(../img/icons/mute2.svg);
-    }
-
-    .volume-img:hover,
-    .mute-img:hover {
-        background: none
-    }
-
 }
 
-//Tema To Relax
+//To Relax
 #torelax {
     .container {
         @include background();
@@ -124,51 +171,12 @@
 
 }
 
+//To Galaxy
 #togalaxy {
+    @include icon-white();
     .container {
         @include background();
         background-image: $bg_img_galaxy;
-
-        .music-playing,
-        .playing {
-            color: #fff;
-        }
-
-        .playing-1,
-        .playing-2,
-        .arrow::after,
-        .arrow::before {
-            background-color: #fff; //0.8
-        }
-
-        .play {
-            background: url(../img/icons/play2.svg);
-        }
-
-        .pause {
-            background: url(../img/icons/pause2.svg);
-        }
-
-        .next {
-            background: url(../img/icons/next2.svg);
-        }
-
-        .back {
-            background: url(../img/icons/back2.svg);
-        }
-
-        .volume-img {
-            background: url(../img/icons/volume2.svg);
-        }
-
-        .mute-img {
-            background: url(../img/icons/mute2.svg);
-        }
-
-        .volume-img:hover,
-        .mute-img:hover {
-            background: none
-        }
 
         .line1,
         .line2,
@@ -194,7 +202,10 @@
     }
 }
 
+//To Grunge
 #togrunge {
+    @include icon-black();
+
     .container {
         @include background();
         background-image: $bg_img_grunge;
@@ -207,7 +218,7 @@
     }
 
     .lines {
-        background: linear-gradient(180deg, #8C3838 0%, #322426 100%);
+        background: linear-gradient(180deg, #8C3838 0%, #22091E 100%);
     }
 
     .line1,
@@ -216,14 +227,6 @@
         display: none;
     }
 
-    // .line1, .line3 {
-    //     background: #8C3838;
-    // }
-
-    // .line2 {
-    //     background: #322426;
-    // }
-
     .logo-left {
         img {
             max-width: 40px;
@@ -231,6 +234,7 @@
             max-height: 40px;
             height: 4vmin;
         }
+
         background: url(../img/icons/icon_togrunge.png);
     }
 
@@ -244,44 +248,57 @@
     //     font-size: 0.6rem;
     // }
 
-    .music-playing,
-    .playing {
-        color: #0a0a0a;
+}
+
+//Tema To Play
+#tutztutz {
+    @include icon-white();
+
+    .container {
+        background: $bg_theme2_img;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
-    .playing-1,
-    .playing-2,
-    .arrow::after,
-    .arrow::before {
-        background-color: #0a0a0a;
+    .tape-title {
+        background: linear-gradient(225deg, #e184c4 0%, #84e0a0 100%);
+        background-size: cover;
     }
 
-    .play {
-        background: url(../img/icons/play3.svg);
+    .tape-window {
+        border-radius: 16px;
     }
 
-    .pause {
-        background: url(../img/icons/pause3.svg);
+    .tape-music-in,
+    .tape-view {
+        background: linear-gradient(225deg, #e184c4 0%, #84e0a0 100%);
     }
 
-    .next {
-        background: url(../img/icons/next3.svg);
+    .tape-in-out,
+    .tape-reels,
+    .box {
+        @include loading-3();
+        border: solid 1px transparent
     }
 
-    .back {
-        background: url(../img/icons/back3.svg);
+    .tape-window {
+        background-image: linear-gradient($pet_bg_theme2, $pet-bg);
     }
 
-    .volume-img {
-        background: url(../img/icons/volume3.svg);
+    .tape-in-out {
+        border-bottom: 0;
     }
 
-    .mute-img {
-        background: url(../img/icons/mute3.svg);
+    .line1,
+    .line2,
+    .line3 {
+        display: none;
     }
 
-    .volume-img:hover,
-    .mute-img:hover {
-        background: none
+    .logo-left {
+        background: url(../img/icons/icon_tutztutz.png);
+        background-size: cover;
     }
+
 }
