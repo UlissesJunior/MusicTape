@@ -137,6 +137,22 @@ Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https:
 
 </td>
 
+<td align="center">
+
+<a href="https://github.com/gabrielsozinho">
+
+<img src="https://github.com/gabrielsozinho.png" width="120px;" alt="Everton"/><br>
+
+<sub>
+
+<b>Gabriel Sozinho</b>
+
+</sub>
+
+</a>
+
+</td>
+
 </tr>
 
 </table>
