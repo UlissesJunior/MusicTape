@@ -48,6 +48,10 @@ O site atual conta com os seguintes temas:
 <p>Um tema feito com músicas do subgênero do rock alternativo, o grunge 🎸 </p>
 <img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/togrunge.png">
 
+<h3>To Rave</h3>
+<p>Um tema feito para fritar com as melhores músicas eletrônicas 🎧 </p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/torave.png">
+
 ---
 
 <h2>Comandos</h2>

@@ -250,12 +250,12 @@
 
 }
 
-//Tema To Play
-#tutztutz {
+//Tema To Rave
+#torave {
     @include icon-white();
 
     .container {
-        background: $bg_theme2_img;
+        background: $bg_torave;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

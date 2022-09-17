@@ -664,74 +664,74 @@
   height: 4vmin;
 }
 
-#tutztutz .music-playing {
+#torave .music-playing {
   color: #fff;
 }
 
-#tutztutz .playing-1,
-#tutztutz .playing-2,
-#tutztutz .arrow::after,
-#tutztutz .arrow::before {
+#torave .playing-1,
+#torave .playing-2,
+#torave .arrow::after,
+#torave .arrow::before {
   background-color: #fff;
 }
 
-#tutztutz .playing {
+#torave .playing {
   color: #fff;
 }
 
-#tutztutz .play {
+#torave .play {
   background: url(../img/icons/play2.svg);
 }
 
-#tutztutz .pause {
+#torave .pause {
   background: url(../img/icons/pause2.svg);
 }
 
-#tutztutz .next {
+#torave .next {
   background: url(../img/icons/next2.svg);
 }
 
-#tutztutz .back {
+#torave .back {
   background: url(../img/icons/back2.svg);
 }
 
-#tutztutz .volume-img {
+#torave .volume-img {
   background: url(../img/icons/volume2.svg);
 }
 
-#tutztutz .mute-img {
+#torave .mute-img {
   background: url(../img/icons/mute2.svg);
 }
 
-#tutztutz .volume-img:hover,
-#tutztutz .mute-img:hover {
+#torave .volume-img:hover,
+#torave .mute-img:hover {
   background: none;
 }
 
-#tutztutz .container {
-  background: url(https://assets2.razerzone.com/images/downloads-page/desktop-wallpapers/blade_studio_series_Phantom_1920x1080.png);
+#torave .container {
+  background: url(../img/bg/bg_torave.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
-#tutztutz .tape-title {
+#torave .tape-title {
   background: linear-gradient(225deg, #e184c4 0%, #84e0a0 100%);
   background-size: cover;
 }
 
-#tutztutz .tape-window {
+#torave .tape-window {
   border-radius: 16px;
 }
 
-#tutztutz .tape-music-in,
-#tutztutz .tape-view {
+#torave .tape-music-in,
+#torave .tape-view {
   background: linear-gradient(225deg, #e184c4 0%, #84e0a0 100%);
 }
 
-#tutztutz .tape-in-out,
-#tutztutz .tape-reels,
-#tutztutz .box {
+#torave .tape-in-out,
+#torave .tape-reels,
+#torave .box {
   border-right: 0;
   border-left: 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2e2e33), to(#333)), -webkit-gradient(linear, left top, right top, from(#FF0012), color-stop(#FF4900), color-stop(#F2FF00), color-stop(#03FE01), color-stop(#00FFE5), color-stop(#0017FF), color-stop(#F900FF), to(#FF0012));
@@ -743,22 +743,22 @@
   border: solid 1px transparent;
 }
 
-#tutztutz .tape-window {
+#torave .tape-window {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2e2e33), to(#333));
   background-image: linear-gradient(#2e2e33, #333);
 }
 
-#tutztutz .tape-in-out {
+#torave .tape-in-out {
   border-bottom: 0;
 }
 
-#tutztutz .line1,
-#tutztutz .line2,
-#tutztutz .line3 {
+#torave .line1,
+#torave .line2,
+#torave .line3 {
   display: none;
 }
 
-#tutztutz .logo-left {
+#torave .logo-left {
   background: url(../img/icons/icon_tutztutz.png);
   background-size: cover;
 }
