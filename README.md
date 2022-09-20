@@ -170,7 +170,7 @@ Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https:
 
 <sub>
 
-<b>Gabriel Sozinho</b>
+<b>Ulysses Leal</b>
 
 </sub>
 
