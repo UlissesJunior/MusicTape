@@ -757,6 +757,75 @@
   background-size: cover;
 }
 
+#low-fi .music-playing {
+  color: #fff;
+}
+
+#low-fi .playing-1,
+#low-fi .playing-2,
+#low-fi .arrow::after,
+#low-fi .arrow::before {
+  background-color: #fff;
+}
+
+#low-fi .playing {
+  color: #fff;
+}
+
+#low-fi .play {
+  background: url(../img/icons/play2.svg);
+}
+
+#low-fi .pause {
+  background: url(../img/icons/pause2.svg);
+}
+
+#low-fi .next {
+  background: url(../img/icons/next2.svg);
+}
+
+#low-fi .back {
+  background: url(../img/icons/back2.svg);
+}
+
+#low-fi .volume-img {
+  background: url(../img/icons/volume2.svg);
+}
+
+#low-fi .mute-img {
+  background: url(../img/icons/mute2.svg);
+}
+
+#low-fi .volume-img:hover,
+#low-fi .mute-img:hover {
+  background: none;
+}
+
+#low-fi .container {
+  background: url(../img/bg/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg/bg_img_low-fi.jpg);
+}
+
+#low-fi .tape-title,
+#low-fi .tape-view,
+#low-fi .tape-music-in {
+  background-color: rgba(227, 250, 162, 0.897);
+}
+
+#low-fi .lines {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f7ecec), to(#190922));
+  background: linear-gradient(180deg, #f7ecec 0%, #190922 100%);
+}
+
+#low-fi .line1,
+#low-fi .line2,
+#low-fi .line3 {
+  display: none;
+}
+
 .playing {
   position: relative;
   display: -webkit-box;
