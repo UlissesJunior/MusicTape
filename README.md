@@ -52,6 +52,11 @@ O site atual conta com os seguintes temas:
 <p>Um tema feito para fritar com as melhores músicas eletrônicas 🎧 </p>
 <img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/torave.png">
 
+<h3>Low-Fi</h3>
+<p>Um tema feito com músicas ambiente para deixar em back space e produzir 💻</p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/low-fi.png">
+<h5> Made By: <a href="https://github.com/ULYBR">Ulysses Leal</a> </h5>
+
 ---
 
 <h2>Comandos</h2>
@@ -146,6 +151,22 @@ Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https:
 <a href="https://github.com/gabrielsozinho">
 
 <img src="https://github.com/gabrielsozinho.png" width="120px;" alt="Everton"/><br>
+
+<sub>
+
+<b>Gabriel Sozinho</b>
+
+</sub>
+
+</a>
+
+</td>
+
+<td align="center">
+
+<a href="https://github.com/ULYBR">
+
+<img src="https://github.com/ULYBR.png" width="120px;" alt="Ulysses"/><br>
 
 <sub>
 
