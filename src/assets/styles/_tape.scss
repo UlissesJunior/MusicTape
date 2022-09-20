@@ -36,8 +36,8 @@
 
 .logo-left {
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: clamp(20px, 4vw, 40px);
+    height: clamp(20px, 4vw, 40px);
     top: 2vmin;
     left: 4vmin;
 }

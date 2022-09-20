@@ -271,8 +271,8 @@
 
 .logo-left {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: clamp(20px, 4vw, 40px);
+  height: clamp(20px, 4vw, 40px);
   top: 2vmin;
   left: 4vmin;
 }
@@ -655,13 +655,7 @@
 
 #togrunge .logo-left {
   background: url(../img/icons/icon_togrunge.png);
-}
-
-#togrunge .logo-left img {
-  max-width: 40px;
-  width: 4vmin;
-  max-height: 40px;
-  height: 4vmin;
+  background-size: cover;
 }
 
 #torave .music-playing {

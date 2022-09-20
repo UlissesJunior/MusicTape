@@ -174,6 +174,7 @@
 //To Galaxy
 #togalaxy {
     @include icon-white();
+
     .container {
         @include background();
         background-image: $bg_img_galaxy;
@@ -228,14 +229,8 @@
     }
 
     .logo-left {
-        img {
-            max-width: 40px;
-            width: 4vmin;
-            max-height: 40px;
-            height: 4vmin;
-        }
-
         background: url(../img/icons/icon_togrunge.png);
+        background-size: cover;
     }
 
     // .logo-right {
