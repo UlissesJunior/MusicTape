@@ -302,3 +302,34 @@
     }
 
 }
+//Low-fi
+#low-fi 
+{
+    @include icon-black();
+
+    .container {
+        @include background();
+        background-image: $bg_img_lowfi;
+    }
+
+    .tape-title,
+    .tape-view,
+    .tape-music-in {
+        background-color: rgba(227, 250, 162, 0.897);
+    }
+
+    .lines {
+        background: linear-gradient(180deg, #f7ecec 0%, #22091E 100%);
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        display: none;
+    }
+
+    
+
+        
+    
+}
