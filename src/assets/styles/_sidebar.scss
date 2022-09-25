@@ -16,12 +16,14 @@
 
 .sidebar-active {
     position: absolute;
+    padding-top: clamp(40px, 6vmin, 65px);
     min-height: 100vh;
     width: 100vw;
     background-color: $bg_home;
     z-index: 2;
     @include center();
     text-align: center;
+    box-sizing: border-box;
 
     .click-zone {
         width: 0;

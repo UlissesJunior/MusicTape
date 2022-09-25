@@ -44,10 +44,10 @@
 
 .logo-right {
     position: absolute;
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 40px;
+    width: clamp(20px, 4vw, 40px);
+    height: clamp(20px, 4vw, 40px);
+    top: 2vmin;
+    right: 4vmin;
 }
 
 .lines {

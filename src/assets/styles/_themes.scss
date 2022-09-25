@@ -297,9 +297,9 @@
     }
 
 }
+
 //Low-fi
-#low-fi 
-{
+#low-fi {
     @include icon-white();
 
     .container {
@@ -321,6 +321,47 @@
     .line2,
     .line3 {
         display: none;
-    }   
-    
+    }
+
+}
+
+//Tema For Steven
+#forsteven {
+    @include icon-white();
+
+    .container {
+        @include background();
+        background-image: $bg_img_forsteven;
+    }
+
+    .tape-title,
+    .tape-view,
+    .tape-music-in {
+        background-color: $color0_theme_forsteven;
+    }
+
+    .tape-title::before {
+        content: "For Steven";
+        font-family: 'Yellowtail';
+        font-size: 3.2vmin;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .logo-left {
+        background: url("../img/icons/icon_forsteven.png");
+        background-size: cover;
+    }
+
+    .line1 {
+        background-color: $color1_theme_forsteven;
+    }
+
+    .line2 {
+        background-color: $color2_theme_forsteven;
+    }
+
+    .line3 {
+        background-color: $color3_theme_forsteven;
+    }
 }

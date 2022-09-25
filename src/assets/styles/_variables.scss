@@ -19,16 +19,23 @@ $color1_theme3: #117438;
 $color2_theme3: #1ED760;
 $color3_theme3: #6BF29A;
 
+$bg_img_galaxy: url(../img/bg/bg_galaxy2.jpg);
 $bg_tape_galaxy: url(../img/tapeview/tape_galaxy.png);
 $color1_theme_galaxy: #1D1B38;
 
 $bg-img-1: url(../img/bg/bg_1.png);
 $bg-img-2: url(../img/bg/bg_2.png);
 $bg-img-3: url(../img/bg/bg_3.png);
-$bg_img_galaxy: url(../img/bg/bg_galaxy2.jpg);
+
 $bg_img_grunge: url(../img/bg/bg_togrunge2.png);
 $bg_torave: url(../img/bg/bg_torave.jpg);
 $bg_img_lowfi: url(../img/bg/bg_img_low-fi.jpg);
+
+$bg_img_forsteven: url(../img/bg/bg_forsteven.jpg);
+$color0_theme_forsteven: #FFEEDC;
+$color1_theme_forsteven: #8E88AC;
+$color2_theme_forsteven: #FF9478;
+$color3_theme_forsteven: #E44A64;
 
 $shadow-box: inset 0.2vmin -0.4vmin 0.8vmin rgba(0, 0, 0, 0.2), inset -2px 4px 8px rgba(255, 255, 255, 0.2);
 $shadow-reels: inset 0.2vmin -0.2vmin 0.8vmin rgba(255, 255, 255, 0.1), inset -4px 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,6 +44,7 @@ $shadow-in-out: inset -4px 4px 8px rgba(255, 255, 255, 0.05), inset 4px 0px 8px 
 
 //Fontes
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 
 @font-face {
     font-family: 'Radwave';

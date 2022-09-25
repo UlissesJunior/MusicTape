@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 @font-face {
   font-family: 'Radwave';
   src: url(../styles/fonts/Radwave.otf), url("/src/styles/fonts/Radwave.otf") format("otf");
@@ -279,10 +280,10 @@
 
 .logo-right {
   position: absolute;
-  width: 40px;
-  height: 40px;
-  top: 20px;
-  right: 40px;
+  width: clamp(20px, 4vw, 40px);
+  height: clamp(20px, 4vw, 40px);
+  top: 2vmin;
+  right: 4vmin;
 }
 
 .lines {
@@ -826,6 +827,89 @@
   display: none;
 }
 
+#forsteven .music-playing {
+  color: #fff;
+}
+
+#forsteven .playing-1,
+#forsteven .playing-2,
+#forsteven .arrow::after,
+#forsteven .arrow::before {
+  background-color: #fff;
+}
+
+#forsteven .playing {
+  color: #fff;
+}
+
+#forsteven .play {
+  background: url(../img/icons/play2.svg);
+}
+
+#forsteven .pause {
+  background: url(../img/icons/pause2.svg);
+}
+
+#forsteven .next {
+  background: url(../img/icons/next2.svg);
+}
+
+#forsteven .back {
+  background: url(../img/icons/back2.svg);
+}
+
+#forsteven .volume-img {
+  background: url(../img/icons/volume2.svg);
+}
+
+#forsteven .mute-img {
+  background: url(../img/icons/mute2.svg);
+}
+
+#forsteven .volume-img:hover,
+#forsteven .mute-img:hover {
+  background: none;
+}
+
+#forsteven .container {
+  background: url(../img/bg/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg/bg_forsteven.jpg);
+}
+
+#forsteven .tape-title,
+#forsteven .tape-view,
+#forsteven .tape-music-in {
+  background-color: #FFEEDC;
+}
+
+#forsteven .tape-title::before {
+  content: "For Steven";
+  font-family: 'Yellowtail';
+  font-size: 3.2vmin;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+#forsteven .logo-left {
+  background: url("../img/icons/icon_forsteven.png");
+  background-size: cover;
+}
+
+#forsteven .line1 {
+  background-color: #8E88AC;
+}
+
+#forsteven .line2 {
+  background-color: #FF9478;
+}
+
+#forsteven .line3 {
+  background-color: #E44A64;
+}
+
 .playing {
   position: relative;
   display: -webkit-box;
@@ -1050,6 +1134,7 @@
 
 .sidebar-active {
   position: absolute;
+  padding-top: clamp(40px, 6vmin, 65px);
   min-height: 100vh;
   width: 100vw;
   background-color: #9174E4;
@@ -1064,6 +1149,8 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sidebar-active .click-zone {
@@ -1186,6 +1273,7 @@
 body {
   background-color: #9174E4;
   cursor: default;
+  overflow-x: hidden;
 }
 
 .container {
