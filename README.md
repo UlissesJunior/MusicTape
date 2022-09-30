@@ -75,25 +75,9 @@ O site atual conta com os seguintes temas:
 
 <h2>Objetivo</h2>
 
-Meu objetivo com esse aplicativo é torná-lo open-source. Portanto vou deixar o passo a passo para contribuição:
+Meu objetivo com esse aplicativo é torná-lo open-source. Portanto, vou deixar o passo a passo para contribuição no <a href="https://github.com/UlissesJunior/MusicTape/blob/main/CONTRIBUTING.md">Contributing.md</a>
 <br/>
-
-- Dê um fork no projeto
-- Altere apenas o arquivo <a href="https://github.com/UlissesJunior/MusicTape/blob/main/src/assets/styles/_themes.scss">\_themes.scss</a> com as alterações do seu novo tema. Você pode se localizar pelo arquivo de estilização da tape para fazer suas alterações <a href="https://github.com/UlissesJunior/MusicTape/blob/main/src/assets/styles/_tape.scss">\_tape.scss</a>
-- Se você utilizar de uma imagem local para o background do seu tema, coloque ela em um prefetch no arquivo <a href="https://github.com/UlissesJunior/MusicTape/blob/main/index.html">index.html</a>
-- Altere o <a href="https://github.com/UlissesJunior/MusicTape/blob/main/README.md">README</a> na seção <a href="#temas">Temas</a> e adicione no padrão.
-
-```
-<h3>Nome do Tema</h3>
-<p>Descrição do tema</p>
-<img src=""> //Imagem do Tema
-<h5> Made By: <a href="https://github.com/NomeDoUsuario">Nome do Usuário</a> </h5>
-```
-
-- Envie um pull request para a branch main documentando suas alterações e com o seu email para contato.
-- Após a minha aprovação, vou te enviar um client para upar a música no banco de dados do projeto.
-
-<br/>Estou muito animado com esse projeto, participem galera! 😉
+Estou muito animado com esse projeto, participem galera! 😉
 
 ---
 
