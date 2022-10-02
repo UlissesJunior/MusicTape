@@ -365,3 +365,11 @@
         background-color: $color3_theme_forsteven;
     }
 }
+
+#forzelda {
+    @include icon-white();
+    .container {
+        @include background();
+        background-image: $bg_img_forzelda;
+    }
+}
