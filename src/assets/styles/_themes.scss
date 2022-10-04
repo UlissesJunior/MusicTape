@@ -373,4 +373,26 @@
         @include background();
         background-image: $bg_img_forzelda;
     }
+
+    .line1 {
+        background-color: $color1_theme_forzelda;
+    }
+
+    .line2 {
+        background-color: $color2_theme_forzelda;
+    }
+
+    .line3 {
+        background-color: $color3_theme_forzelda;
+    }
+
+    .tape-title {
+        background-color: $color0_theme_forzelda;
+    }
+
+    .tape-view,
+    .tape-music-in {
+        background-color: $color4_theme_forzelda;
+    }
+
 }
