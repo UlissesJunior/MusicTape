@@ -774,6 +774,22 @@
   background-position: center;
   background-image: url("https://r4.wallpaperflare.com/wallpaper/95/828/62/zelda-the-legend-of-zelda-breath-of-the-wild-link-wallpaper-0970e8fda11a7d1b3627381f70a196dd.jpg");
 }
+#forzelda .line1 {
+  background-color: #9be7f5;
+}
+#forzelda .line2 {
+  background-color: #2aa8b6;
+}
+#forzelda .line3 {
+  background-color: #155869;
+}
+#forzelda .tape-title {
+  background-color: #a6f1ff;
+}
+#forzelda .tape-view,
+#forzelda .tape-music-in {
+  background-color: #4faead;
+}
 
 .playing {
   position: relative;
