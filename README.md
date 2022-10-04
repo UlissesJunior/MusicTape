@@ -172,6 +172,22 @@ Este projeto está sob uma licença MIT, confira mais no arquivo <a href="https:
 
 </td>
 
+<td align="center">
+
+<a href="https://github.com/DaviAChagas">
+
+<img src="https://github.com/DaviAChagas.png" width="120px;" alt="Davi"/><br>
+
+<sub>
+
+<b>Davi Chagas</b>
+
+</sub>
+
+</a>
+
+</td>
+
 </tr>
 
 </table>
