@@ -62,6 +62,11 @@ O site atual conta com os seguintes temas:
 <img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/forsteven.png">
 <h5> Background By: <a href="https://edsonlopes.artstation.com/">Edson Lopes</a> </h5>
 
+<h3>For Zelda</h3>
+<p>Um tema dedicado aos fãs da franquia Zelda, que possui a melhor trilha sonora dos games 🙌⚔️</p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/forzelda.png">
+<h5>Made By: <a href="https://github.com/DaviAChagas">Davi Chagas</a> </h5>
+
 ---
 
 <h2>Comandos</h2>
