@@ -105,18 +105,6 @@
   cursor: pointer;
 }
 
-@-webkit-keyframes playing1 {
-  0% {
-    height: 24px;
-  }
-  50% {
-    height: 12px;
-  }
-  100% {
-    height: 24px;
-  }
-}
-
 @keyframes playing1 {
   0% {
     height: 24px;
@@ -126,17 +114,6 @@
   }
   100% {
     height: 24px;
-  }
-}
-@-webkit-keyframes playing2 {
-  0% {
-    height: 12px;
-  }
-  50% {
-    height: 24px;
-  }
-  100% {
-    height: 12px;
   }
 }
 @keyframes playing2 {
@@ -150,22 +127,9 @@
     height: 12px;
   }
 }
-@-webkit-keyframes loading {
-  to {
-    background-position-x: 200%;
-  }
-}
 @keyframes loading {
   to {
     background-position-x: 200%;
-  }
-}
-@-webkit-keyframes spin-star {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 @keyframes spin-star {
@@ -205,8 +169,7 @@
   height: 29.2vmin;
   border-radius: 2.5vmin;
   background: #fff;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
@@ -358,8 +321,7 @@
   background-image: linear-gradient(#2e2e33, #333), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
   background-clip: padding-box, border-box;
   background-size: 200% auto;
-  -webkit-animation: loading 2.5s infinite linear;
-          animation: loading 2.5s infinite linear;
+  animation: loading 2.5s infinite linear;
   border: solid 1px transparent;
 }
 #toplay .tape-window {
@@ -378,8 +340,7 @@
   background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
   background-clip: padding-box, border-box;
   background-size: 200% auto;
-  -webkit-animation: loading 2.5s infinite linear;
-          animation: loading 2.5s infinite linear;
+  animation: loading 2.5s infinite linear;
 }
 #toplay .line2 {
   border-right: 0;
@@ -387,8 +348,7 @@
   background-image: linear-gradient(transparent, transparent), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
   background-clip: padding-box, border-box;
   background-size: 200% auto;
-  -webkit-animation: loading 2.5s infinite linear;
-          animation: loading 2.5s infinite linear;
+  animation: loading 2.5s infinite linear;
   border-bottom: 0;
 }
 #toplay .line3 {
@@ -591,8 +551,7 @@
   background-image: linear-gradient(#2e2e33, #333), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
   background-clip: padding-box, border-box;
   background-size: 200% auto;
-  -webkit-animation: loading 2.5s infinite linear;
-          animation: loading 2.5s infinite linear;
+  animation: loading 2.5s infinite linear;
   border: solid 1px transparent;
 }
 #torave .tape-window {
@@ -814,13 +773,11 @@
 }
 
 .animate-1 {
-  -webkit-animation: playing1 1.8s ease-in-out infinite;
-          animation: playing1 1.8s ease-in-out infinite;
+  animation: playing1 1.8s ease-in-out infinite;
 }
 
 .animate-2 {
-  -webkit-animation: playing2 1.8s ease-in-out infinite;
-          animation: playing2 1.8s ease-in-out infinite;
+  animation: playing2 1.8s ease-in-out infinite;
 }
 
 .music-playing {
@@ -976,6 +933,7 @@
 }
 
 .click-zone {
+  cursor: pointer;
   width: 100%;
   height: 60px;
 }
@@ -1041,8 +999,7 @@
 }
 
 .star:hover {
-  -webkit-animation: spin-star 0.6s;
-          animation: spin-star 0.6s;
+  animation: spin-star 0.6s;
 }
 
 .confetti {
@@ -1055,21 +1012,25 @@
   .sidebar {
     width: 60px;
   }
+
   .hamburguer {
     width: 24px;
     right: 12px;
   }
+
   .confetti {
     position: absolute;
     width: 60px;
     bottom: 120px;
   }
+
   .star {
     width: 24px;
     height: 24px;
     background-size: cover;
     right: 16px;
   }
+
   .hamburguer::before,
 .hamburguer::after {
     width: 32px;
@@ -1145,4 +1106,6 @@ span {
 
 .none {
   display: none;
-}/*# sourceMappingURL=app.css.map */
+}
+
+/*# sourceMappingURL=app.css.map */
