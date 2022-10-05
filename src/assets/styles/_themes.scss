@@ -396,3 +396,11 @@
     }
 
 }
+
+#goloud {
+    @include icon-white();
+    .container {
+        @include background();
+        background-image: $bg_img_goloud;
+    }
+}

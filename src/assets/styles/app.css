@@ -791,6 +791,48 @@
   background-color: #4faead;
 }
 
+#goloud .music-playing {
+  color: #fff;
+}
+#goloud .playing-1,
+#goloud .playing-2,
+#goloud .arrow::after,
+#goloud .arrow::before {
+  background-color: #fff;
+}
+#goloud .playing {
+  color: #fff;
+}
+#goloud .play {
+  background: url(../img/icons/play2.svg);
+}
+#goloud .pause {
+  background: url(../img/icons/pause2.svg);
+}
+#goloud .next {
+  background: url(../img/icons/next2.svg);
+}
+#goloud .back {
+  background: url(../img/icons/back2.svg);
+}
+#goloud .volume-img {
+  background: url(../img/icons/volume2.svg);
+}
+#goloud .mute-img {
+  background: url(../img/icons/mute2.svg);
+}
+#goloud .volume-img:hover,
+#goloud .mute-img:hover {
+  background: none;
+}
+#goloud .container {
+  background: url(../img/bg/bg_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../img/bg/bg_goloud.jpg);
+}
+
 .playing {
   position: relative;
   display: flex;
