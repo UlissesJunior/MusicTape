@@ -67,6 +67,11 @@ O site atual conta com os seguintes temas:
 <img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/forzelda.png">
 <h5>Made By: <a href="https://github.com/DaviAChagas">Davi Chagas</a> </h5>
 
+<h3>Go Loud</h3>
+<p>Um tema dedicado aos fãs do melhor time de Esports da América Latina (Perdão Fúria, mas esse ano a melhor org vai pra Loud), com as músicas da equipe, feitas em sua maioria pelo <a href="https://open.spotify.com/artist/3LutKkAZcYI7vS81R2yJjy?si=tg4ySAkESYSzBQK5HahBPg">Guxta</a>. FAZ O L 💚💚💚</p>
+<img src="https://github.com/UlissesJunior/MusicTape/raw/main/src/assets/img/readme/goloud.png">
+<h5> Background By: <a href="https://www.behance.net/K4ztr">K4ztr</a> </h5>
+
 ---
 
 <h2>Comandos</h2>

@@ -409,7 +409,7 @@
     }
 
     .lines {
-        background: linear-gradient(180deg, #006424 0%, #2DA657 100%);
+        background: linear-gradient(180deg, #52BB76 0%, #6BF29A 100%);
     }
 
     .line1,
@@ -419,6 +419,13 @@
     }
 
     .tape-music-in, .tape-view {
-        background-color: #2DA657;
+        background-color: #52BB76;
+    }
+    
+    .logo-left {
+        width: 4.8vmin;
+        height: 3.2vmin;
+        background: url(../img/icons/icon_goloud.png);
+        background-size: cover;
     }
 }
