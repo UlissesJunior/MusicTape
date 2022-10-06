@@ -403,4 +403,22 @@
         @include background();
         background-image: $bg_img_goloud;
     }
+
+    .box, .tape-reels, .tape-window, .tape-in-out {
+        background-color: #222;
+    }
+
+    .lines {
+        background: linear-gradient(180deg, #006424 0%, #2DA657 100%);
+    }
+
+    .line1,
+    .line2,
+    .line3 {
+        display: none;
+    }
+
+    .tape-music-in, .tape-view {
+        background-color: #2DA657;
+    }
 }
