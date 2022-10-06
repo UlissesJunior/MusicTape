@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState, useContext } from "react";
 
 import { Howl } from "howler";
-// import { supabase } from "../client/supabaseClient";
+import { supabase } from "../client/supabaseClient";
 
 import MusicTape from "../components/MusicTape";
 
