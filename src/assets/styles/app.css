@@ -832,6 +832,20 @@
   background-position: center;
   background-image: url(../img/bg/bg_goloud.jpg);
 }
+#goloud .box, #goloud .tape-reels, #goloud .tape-window, #goloud .tape-in-out {
+  background-color: #222;
+}
+#goloud .lines {
+  background: linear-gradient(180deg, #006424 0%, #2DA657 100%);
+}
+#goloud .line1,
+#goloud .line2,
+#goloud .line3 {
+  display: none;
+}
+#goloud .tape-music-in, #goloud .tape-view {
+  background-color: #2DA657;
+}
 
 .playing {
   position: relative;
