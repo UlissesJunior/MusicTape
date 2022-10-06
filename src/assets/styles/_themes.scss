@@ -273,7 +273,7 @@
     .tape-in-out,
     .tape-reels,
     .box {
-        @include loading-3();
+        @include loading-torave();
         border: solid 1px transparent
     }
 

@@ -49,6 +49,18 @@
     animation: loading 2.5s infinite linear;
 }
 
+@mixin loading-torave() {
+    border-right: 0;
+    border-left: 0;
+
+    background-image: linear-gradient($pet_bg_theme2, $pet-bg),
+    linear-gradient(to right, #e184c4, #84e0a0);
+    background-clip: padding-box, border-box;
+
+    background-size: 200% auto;
+    animation: loading 2.5s infinite linear;
+}
+
 .center_high {
     @include center();
     width: 100vw;

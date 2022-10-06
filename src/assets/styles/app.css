@@ -588,7 +588,7 @@
 #torave .box {
   border-right: 0;
   border-left: 0;
-  background-image: linear-gradient(#2e2e33, #333), linear-gradient(to right, #FF0012, #FF4900, #F2FF00, #03FE01, #00FFE5, #0017FF, #F900FF, #FF0012);
+  background-image: linear-gradient(#2e2e33, #333), linear-gradient(to right, #e184c4, #84e0a0);
   background-clip: padding-box, border-box;
   background-size: 200% auto;
   -webkit-animation: loading 2.5s infinite linear;
