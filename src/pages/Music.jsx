@@ -77,15 +77,28 @@ function Music() {
   }, [end && status ? sound.play() : sound.pause()]);
 
   const back = () => {
-    setStatus(false);
-    setEnd(end - 1);
-    sound.stop();
+    console.log(end);
+    if (end === 0) {
+      setStatus(false);
+      setEnd(length);
+      sound.stop();
+    } else {
+      setStatus(false);
+      setEnd(end - 1);
+      sound.stop();
+    }
   };
 
   const next = () => {
-    setStatus(false);
-    setEnd(end + 1);
-    sound.stop();
+    if (end === length) {
+      setStatus(false);
+      setEnd(0);
+      sound.stop();
+    } else {
+      setStatus(false);
+      setEnd(end + 1);
+      sound.stop();
+    }
   };
 
   document.body.onkeyup = function (event) {
