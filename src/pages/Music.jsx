@@ -19,7 +19,7 @@ function Music() {
   const [music, setMusic] = useState();
   const [end, setEnd] = useState(0);
   const [status, setStatus] = useState(true);
-  const [length, setLength] = useState("");
+  const [length, setLength] = useState();
   const [random, setRandom] = useState(false);
   // const [isplaying, setIsPlaying] = useState()
 
@@ -40,65 +40,68 @@ function Music() {
     },
   });
 
-  useEffect(() => {
-    async function HandleUpload() {
-      try {
+   useEffect(() => {
+     async function HandleUpload() {
+       try {
         const { data, error } = await supabase.storage
-          .from("playlists")
-          .list(`${params.id}`, {
-            limit: 25,
-          });
-        setLength(data.length);
-        if (random === true) {
-          const random = Math.floor(Math.random() * length);
-          console.log(random);
-          setData(data[random].name);
-          setMusic(
-            import.meta.env.VITE_TEST_STORAGE_URL +
-              `${params.id}` +
-              "/" +
-              `${data[random]?.name.replaceAll(" ", "%20")}`
-          );
-        } else {
-          setData(data[end].name);
-          setMusic(
-            import.meta.env.VITE_TEST_STORAGE_URL +
-              `${params.id}` +
-              "/" +
-              `${data[end]?.name.replaceAll(" ", "%20")}`
-          );
-        }
-      } catch (e) {
-        console.log(e);
-      }
-    }
-    HandleUpload();
-    sound.pause();
-  }, [end && status ? sound.play() : sound.pause()]);
+           .from("playlists")
+           .list(`${params.id}`, {
+             limit: 25,
+           });
+         setLength(data.length - 1);
+         if (random === true) {
+           const random = Math.floor(Math.random() * length);
+           console.log(random);
+           setData(data[random].name);
+           setMusic(
+             import.meta.env.VITE_TEST_STORAGE_URL +
+               `${params.id}` +
+               "/" +
+               `${data[random]?.name.replaceAll(" ", "%20")}`
+           );
+         } else {
+           setData(data[end].name);
+           setMusic(
+             import.meta.env.VITE_TEST_STORAGE_URL +
+               `${params.id}` +
+               "/" +
+               `${data[end]?.name.replaceAll(" ", "%20")}`
+           );
+         }
+       } catch (e) {
+         console.log(e);
+       }
+     }
+     HandleUpload();
+     sound.pause();
+   }, [end && status ? sound.play() : sound.pause()]);
 
   const back = () => {
-    console.log(end);
-    if (end === 0) {
-      setStatus(false);
-      setEnd(length);
-      sound.stop();
-    } else {
-      setStatus(false);
-      setEnd(end - 1);
-      sound.stop();
-    }
+    setEnd(() => {
+      if (end <= 0) {
+        setStatus(false);
+        sound.stop();
+        return length;
+      } else {
+        setStatus(false);
+        sound.stop();
+        return (end - 1);
+      }
+    })
   };
 
   const next = () => {
-    if (end === length) {
-      setStatus(false);
-      setEnd(0);
-      sound.stop();
-    } else {
-      setStatus(false);
-      setEnd(end + 1);
-      sound.stop();
-    }
+    setEnd(() => {
+      if (end >= length) {
+        setStatus(false);
+        sound.stop();
+        return 0;
+      } else {
+        setStatus(false);
+        sound.stop();
+        return (end + 1);
+      }
+    })
   };
 
   document.body.onkeyup = function (event) {

@@ -72,7 +72,7 @@ function Sidebar() {
           ) : (
             " "
           )}
-          <ExternalLink style={{position: "absolute", bottom: "0px", right: "0px"}}href="https://github.com/UlissesJunior/MusicTape">
+          <ExternalLink style={{ position: "absolute", bottom: "0px", right: "0px" }} href="https://github.com/UlissesJunior/MusicTape">
             <div
               onClick={ConfettiToogle}
               className={open ? "star" : "none"}
