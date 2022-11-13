@@ -40,44 +40,44 @@ function Music() {
     },
   });
 
-   useEffect(() => {
-     async function HandleUpload() {
-       try {
+  useEffect(() => {
+    async function HandleUpload() {
+      try {
         const { data, error } = await supabase.storage
-           .from("playlists")
-           .list(`${params.id}`, {
-             limit: 25,
-           });
-         setLength(data.length - 1);
-         if (random === true) {
-           const random = Math.floor(Math.random() * length);
-           console.log(random);
-           setData(data[random].name);
-           setMusic(
-             import.meta.env.VITE_TEST_STORAGE_URL +
-               `${params.id}` +
-               "/" +
-               `${data[random]?.name.replaceAll(" ", "%20")}`
-           );
-         } else {
-           setData(data[end].name);
-           setMusic(
-             import.meta.env.VITE_TEST_STORAGE_URL +
-               `${params.id}` +
-               "/" +
-               `${data[end]?.name.replaceAll(" ", "%20")}`
-           );
-         }
-       } catch (e) {
-         console.log(e);
-       }
-     }
-     HandleUpload();
-     sound.pause();
-   }, [end && status ? sound.play() : sound.pause()]);
+          .from("playlists")
+          .list(`${params.id}`, {
+            limit: 25,
+          });
+        setLength(data.length - 1);
+        if (random === true) {
+          const random = Math.floor(Math.random() * length);
+          console.log(random);
+          setData(data[random].name);
+          setMusic(
+            import.meta.env.VITE_TEST_STORAGE_URL +
+            `${params.id}` +
+            "/" +
+            `${data[random]?.name.replaceAll(" ", "%20")}`
+          );
+        } else {
+          setData(data[end].name);
+          setMusic(
+            import.meta.env.VITE_TEST_STORAGE_URL +
+            `${params.id}` +
+            "/" +
+            `${data[end]?.name.replaceAll(" ", "%20")}`
+          );
+        }
+      } catch (e) {
+        console.log(e);
+      }
+    }
+    HandleUpload();
+    sound.pause();
+  }, [end && status ? sound.play() : sound.pause()]);
 
   const back = () => {
-    setEnd(() => {
+    setEnd((old) => {
       if (end <= 0) {
         setStatus(false);
         sound.stop();
@@ -85,21 +85,21 @@ function Music() {
       } else {
         setStatus(false);
         sound.stop();
-        return (end - 1);
+        return (old - 1);
       }
     })
   };
 
   const next = () => {
-    setEnd(() => {
-      if (end >= length) {
+    setEnd((old) => {
+      if (old >= length) {
         setStatus(false);
         sound.stop();
         return 0;
       } else {
         setStatus(false);
         sound.stop();
-        return (end + 1);
+        return (old + 1);
       }
     })
   };
