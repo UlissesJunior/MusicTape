@@ -78,7 +78,7 @@ function Music() {
 
   const back = () => {
     setEnd((old) => {
-      if (end <= 0) {
+      if (old <= 0) {
         setStatus(false);
         sound.stop();
         return length;
